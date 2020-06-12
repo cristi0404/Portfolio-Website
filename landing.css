@@ -1,0 +1,80 @@
+body {
+	background: #0E1C23;
+	overflow-x:hidden;
+}
+
+a {
+	color: #0E1C23;
+}
+
+a:hover {
+	color: #FFF9DD;
+	text-decoration: none;
+}
+
+/*custom bootstrap navbar and container styling for landing page*/
+.nav-link {
+	color: #FFF9DD;
+}
+
+.nav-link:active {
+	color: #5EA3A0;
+}
+
+a.nav-link::after {
+	content:none;
+}
+
+a.nav-link:hover::after {
+	content:none;
+}
+
+.container {
+	margin-top:2%;
+}
+
+.row {
+	position:relative;
+	min-height: 73vh;
+}
+
+
+/*font color is creme for devices < large 
+and non-hover devices; active/hover font is blue*/
+@media (max-width: 991.98px) {
+	a{color:#FFF9DD;}
+	a:hover{color:#5EA3A0;}
+}
+
+@media (any-hover: none) {
+	a{color:#FFF9DD;}
+	a:active{color:#5EA3A0;}
+}
+
+/*for xs to medium screens, hide vertical nav*/
+@media (max-width: 991.98px) {
+	#verticalnav{display:none;}
+}
+
+/*for large and extra large screens that support hover, 
+hide bootstrap navbar*/
+@media (min-width: 992px) and (any-hover: hover) {
+	.navbar{display:none;}
+}
+
+/*for any screen that doesn't support hover, hide verticalnav 
+and resize bootstrap navbar accordingly*/
+@media (any-hover: none) {
+	#verticalnav{display:none;}
+	.navbar{padding-top:7%;}
+	.navbar-brand{width:85vw;}
+	.nav-link{font-size:4.5vw;}
+}
+
+/*layout and sizing adjustments for HD screens*/
+@media (min-width: 1200px) {
+    .container{
+        max-width: 80vw;
+    }
+}
+
