@@ -79,7 +79,7 @@ a.nav-link:hover::after {
 }
 
 /* NAVBAR MEDIA QUERIES */
-/* for devices with medium width and lower, disable drop downmenu 
+/* for screens with medium width and lower, disable drop downmenu 
 and resize navbar accordingly */
 
 @media (max-width: 991.98px) {
@@ -110,6 +110,54 @@ dropdown menu and change hover to active (for the case of landscape tablets) */
 	a.nav-link::after{content:none;}
 	a.nav-link:hover::after{content:none;}
 }
+
+
+/*--------------------------*/
+/* LANDING PAGE */
+
+.center {
+	padding-top:30px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 550px;
+}
+
+nav.landing {
+	padding-top:2%;
+}
+
+ul.landing {
+	margin:auto;
+	text-align:center;
+	padding:0px;
+	width:550px;
+	list-style-type: none;
+}
+
+li.landing {
+	display: inline;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 170%;
+	margin: 20px;
+}
+
+
+/* LANDING PAGE MEDIA QUERIES */
+
+/*extra padding and increased font for portrait phones*/
+@media (max-width: 575.98px) and (any-hover:none) {
+	div.landing{padding:13% 10% 3% 10%;}
+	li.landing{font-size:150%;}
+}
+
+/*for screens with large & extra large width that support hover, 
+nav is rotated to vertical*/
+@media (min-width: 992px) and (any-hover: hover) {
+	nav.landing{position:fixed;transform:rotate(90deg);top:53%;right:-200px;}
+}
+
+
 
 
 
@@ -161,7 +209,7 @@ dropdown menu and change hover to active (for the case of landscape tablets) */
 
 
 /* CONTACT PAGE MEDIA QUERIES */
-/* for devices with medium width and lower, hide unnecessary elements, 
+/* for screens with medium width and lower, hide unnecessary elements, 
 reveal other elements, resize them accordingly */
 
 @media (max-width: 991.98px) {
@@ -209,9 +257,8 @@ reveal other elements, resize them accordingly */
 	#bcpen{display:none;}
 }
 
-/* for anything that is larger than a phone and is "touchscreen"
-(aka mouse is not primary input), hide unnecessary elements 
-(for the case of landscape tablets) */
+/* for anything that is larger than a phone and is "touchscreen", 
+hide unnecessary elements (for the case of landscape tablets) */
 
 @media (any-hover: none) {
 	#iphone{display:none;}
