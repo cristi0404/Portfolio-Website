@@ -1,0 +1,13 @@
+body {
+	background: #AF875A;
+	background-image: url(graphics/woodgrain.svg);
+	background-size: 100vw;
+}
+
+.container {
+	margin-top: 3%;
+}
+
+@media (min-width: 576px) {
+	.row{min-height: 85vh;}
+}
