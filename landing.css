@@ -7,18 +7,18 @@ a {
 }
 
 a:hover {
-	color: #F0EAC6;
+	color: #FFF9DD;
 	text-decoration: none;
 }
 
-/*font color is creme for non-hover devices 
-and devices smaller than large; active/hover font is blue*/
+/*font color is creme for devices smaller than large 
+and non-hover devices; active/hover font is blue*/
 @media (max-width: 991.98px) {
-	a{color:#F0EAC6;}
+	a{color:#FFF9DD;}
 	a:hover{color:#5EA3A0;}
 }
 
 @media (any-hover: none) {
-	a{color:#F0EAC6;}
+	a{color:#FFF9DD;}
 	a:active{color:#5EA3A0;}
 }
