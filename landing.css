@@ -1,0 +1,24 @@
+body {
+	background: #0E1C23;
+}
+
+a {
+	color: #5EA3A0;
+}
+
+a:hover {
+	color: #F0EAC6;
+	text-decoration: none;
+}
+
+/*font color is creme for non-hover devices 
+and devices smaller than large; active/hover font is blue*/
+@media (max-width: 991.98px) {
+	a{color:#F0EAC6;}
+	a:hover{color:#5EA3A0;}
+}
+
+@media (any-hover: none) {
+	a{color:#F0EAC6;}
+	a:active{color:#5EA3A0;}
+}
