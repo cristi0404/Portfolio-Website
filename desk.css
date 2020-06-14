@@ -8,6 +8,8 @@ body {
 	margin-top: 3%;
 }
 
-@media (min-width: 576px) {
-	.row{min-height: 85vh;}
+.row {
+	min-height: 85vh;
 }
+
+
