@@ -3,7 +3,7 @@ body {
 }
 
 a {
-	color: #5EA3A0;
+	color: #0E1C23;
 }
 
 a:hover {
@@ -71,3 +71,4 @@ and resize bootstrap navbar accordingly*/
 	.navbar-brand{width:75vw;}
 	.nav-link{font-size:4vw;}
 }
+
