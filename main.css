@@ -153,18 +153,27 @@ li.landing {
 	top:42%;
 }
 
-#outline {
+.show {
+  		visibility: visible;
+  	}
+
+.hide {
 	visibility:hidden;
 }
 
-#darklamp:hover #outline {
+#darklamp:hover #st7 {
 	visibility: visible;
 }
 
+#darklamp:hover {
+	cursor: pointer;
+}
+
 #lightbeam {
-	position: fixed;
+	position:absolute;
 	background-color: #EAD6B5;
 	opacity: 0.8;
+	visibility:hidden;
 }
 
 
@@ -197,14 +206,19 @@ logo and nav size are adjusted*/
 	div.landing{width:450px;}
 	li.landing{font-size: 150%;}
 	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
-	#lightbeam{	top:42.1%;right:49%;width:510px;height:137px;transform:perspective(165px) rotateY(144deg);}
+	#lightbeam{	top:38.3%;right:49%;width:510px;height:137px;transform:perspective(165px) rotateY(144deg);}
 }
 
 @media (min-width: 1200px) and (any-hover: hover) {
 	div.landing{width:550px;}
 	li.landing{font-size: 170%;}
 	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
-	#lightbeam{top:44%;right:51%;width:550px;height:150px;transform:perspective(160px) rotateY(152deg);}
+	#lightbeam{top:38.9%;right:51%;width:550px;height:150px;transform:perspective(160px) rotateY(152deg);}
+}
+
+/*lightbeam workaround for 1920x1080 screens*/
+@media (min-width: 1920px) and (any-hover: hover) {
+	#lightbeam{top:39.5%;}
 }
 
 /* for anything that is larger than a phone and does not support hover, 
@@ -338,7 +352,7 @@ hide unnecessary elements (for the case of landscape tablets) */
 	#contact-info{font-size:180%;}
 }
 
-/*for large and xl sized screens in portrait that don't
+/*for large and xl sized screens in portrait view that don't
 support hover, adjust layout and sizing*/
 @media (min-width: 992px) and (any-hover:none) and (orientation:portrait) {
 	#pen{display:none;}
