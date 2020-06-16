@@ -140,6 +140,8 @@ div.landing {
 	margin-right: auto;
 	margin-left: auto;
 	width: 550px;
+	position:sticky;
+	z-index: 1;
 }
 
 ul.landing {
@@ -222,7 +224,7 @@ nav is vertical with z-index, lightbeam is made available,
 logo and nav size are adjusted*/
 @media (min-width: 992px) and (any-hover: hover) {
 	#darkwindow{position:absolute;}
-	div.landing{width:450px;}
+	div.landing{width:450px;display:;}
 	li.landing{font-size: 150%;}
 	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
 	#lightbeam{	top:41.8%;right:49%;width:510px;height:137px;transform:perspective(165px) rotateY(144deg);}
