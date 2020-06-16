@@ -12,4 +12,9 @@ body {
 	min-height: 85vh;
 }
 
+@media (min-width: 1200px) {
+    .container{
+        max-width: 80vw;
+    }
+}
 
