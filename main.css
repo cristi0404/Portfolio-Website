@@ -90,7 +90,7 @@ and resize navbar accordingly */
 
 /* phones (portrait & landscape) */
 @media (max-width: 767.98px) {
-	.navbar{padding-top:5%;}
+	.navbar{padding-top:7%;}
 	.navbar-brand{width:85vw;}
 	.nav-link{font-size:4.8vw;}
 }
@@ -102,6 +102,14 @@ and resize navbar accordingly */
 	.nav-link{font-size:4vw;}
 }
 
+/* extra large screens */
+@media (min-width: 1200px) {
+	.navbar{padding-top:0.8%;}
+	.navbar-brand{width:28vw;}
+	.nav-link{font-size:1.5vw;}
+	.dropdown-item{font-size:1.2vw;}
+}
+
 /* for anything that does not support hover, disable the 
 dropdown menu and change hover to active (for the case of landscape tablets) */
 
@@ -111,6 +119,15 @@ dropdown menu and change hover to active (for the case of landscape tablets) */
 	.nav-link:hover{content:none;}
 	a.nav-link::after{content:none;}
 	a.nav-link:hover::after{content:none;}
+}
+
+/*for large and xl sized screens in portrait view that don't
+support hover, adjust nav sizing*/
+@media (min-width: 992px) and (any-hover:none) and (orientation:portrait) {
+	.navbar{padding-top:1%;}
+	.navbar-brand{width:36vw;}
+	.nav-link{font-size:2vw;}
+	.dropdown-item{font-size:1.2vw;}
 }
 
 
@@ -150,7 +167,7 @@ li.landing {
 
 #darklamp {
 	position:absolute;
-	top:42%;
+	top:46%;
 }
 
 .show {
@@ -199,29 +216,28 @@ hide elements and resize other elements accordingly*/
 }
 
 
+
 /*for large & extra large screens that support hover, 
 nav is vertical with z-index, lightbeam is made available,
 logo and nav size are adjusted*/
 @media (min-width: 992px) and (any-hover: hover) {
+	#darkwindow{position:absolute;}
 	div.landing{width:450px;}
 	li.landing{font-size: 150%;}
 	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
-	#lightbeam{	top:38.3%;right:49%;width:510px;height:137px;transform:perspective(165px) rotateY(144deg);}
+	#lightbeam{	top:41.8%;right:49%;width:510px;height:137px;transform:perspective(165px) rotateY(144deg);}
 }
 
 @media (min-width: 1200px) and (any-hover: hover) {
-	div.landing{width:550px;}
-	li.landing{font-size: 170%;}
-	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
-	#lightbeam{top:38.9%;right:51%;width:550px;height:150px;transform:perspective(160px) rotateY(152deg);}
+	div.landing{width:42vw;padding-top:2.5%;}
+	li.landing{font-size:2vw;}
+	ul.landing{width:100%;}
+	nav.landing{position:absolute;transform:rotate(90deg);top:50%;right:-9%;z-index:1;}
+	#lightbeam{top:43%;right:59%;width:30vw;height:10.3vw;transform:perspective(8vw) rotateY(154deg);}
 }
 
-/*lightbeam workaround for 1920x1080 screens*/
-@media (min-width: 1920px) and (any-hover: hover) {
-	#lightbeam{top:39.5%;}
-}
 
-/* for anything that is larger than a phone and does not support hover, 
+/* for anything that is larger than phone & tablet and does not support hover, 
 hide unnecessary elements and resize accordingly (aka landscape tablets) */
 @media (any-hover: none) {
 	#darklamp{display:none;}
@@ -284,6 +300,9 @@ hide unnecessary elements and resize accordingly (aka landscape tablets) */
 
 
 /* CONTACT PAGE MEDIA QUERIES */
+
+/*layout styling for screens > 1200 is in desk.css*/
+
 /* for screens with medium width and lower, hide unnecessary elements, 
 reveal other elements, resize them accordingly */
 
@@ -291,7 +310,7 @@ reveal other elements, resize them accordingly */
 	#iphone{display:none;}
 	#pen{display:none;}
 	#note{margin-bottom:5%;}
-	#bcpen{display:block;width:85%;margin-top:10%;margin-bottom:10%;}
+	#bcpen{display:block;width:75vw;margin-top:10%;margin-bottom:10%;}
 }
 
 /*portrait phones*/
@@ -299,6 +318,7 @@ reveal other elements, resize them accordingly */
 	#note{width:80%;margin-top:8%;}
 	#contact-title{font-size:5.9vw;top:8%;}
 	#contact-info{font-size:4.5vw;}
+	#bcpen{width:90vw;}
 }
 
 /*landscape phones*/
@@ -326,8 +346,8 @@ reveal other elements, resize them accordingly */
 /*large desktops (horizontal navbar)*/
 @media (min-width: 1200px) {
 	#note{width:37%;margin-right:8%;margin-bottom:5%;margin-right:8%;}
-	#contact-title{font-size:200%;top:8%;}
-	#contact-info{font-size:145%;}
+	#contact-title{font-size:2.3vw;top:8%;}
+	#contact-info{font-size:1.6vw;}
 	#bcpen{display:none;}
 }
 
@@ -348,8 +368,8 @@ hide unnecessary elements (for the case of landscape tablets) */
 @media (any-hover: none) and (min-width: 1200px) {
 	#pen{width:7%;}
 	#note{width:45%;}
-	#contact-title{font-size:260%;top:8%;}
-	#contact-info{font-size:180%;}
+	#contact-title{font-size:2.8vw;top:8%;}
+	#contact-info{font-size:2vw;}
 }
 
 /*for large and xl sized screens in portrait view that don't
@@ -359,5 +379,7 @@ support hover, adjust layout and sizing*/
 	#note{width:50%;margin-top:7%;}
 	#contact-title{font-size:240%;top:8%;}
 	#contact-info{font-size:165%;}
-	#bcpen{display:block;width:70%;}
+	#bcpen{display:block;width:60vw;}
 }
+
+/* safety net for anything in portrait orientation */
