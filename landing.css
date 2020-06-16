@@ -1,5 +1,6 @@
 body {
 	background: #0E1C23;
+	overflow:hidden;
 }
 
 a {
@@ -34,11 +35,9 @@ a.nav-link:hover::after {
 
 .row {
 	position:relative;
+	min-height: 73vh;
 }
 
-@media (min-width: 576px) {
-	.row{min-height: 80vh;}
-}
 
 /*font color is creme for devices < large 
 and non-hover devices; active/hover font is blue*/
@@ -68,7 +67,14 @@ and resize bootstrap navbar accordingly*/
 @media (any-hover: none) {
 	#verticalnav{display:none;}
 	.navbar{padding-top:7%;}
-	.navbar-brand{width:75vw;}
-	.nav-link{font-size:4vw;}
+	.navbar-brand{width:85vw;}
+	.nav-link{font-size:4.5vw;}
+}
+
+/*layout and sizing adjustments for HD screens*/
+@media (min-width: 1200px) {
+    .container{
+        max-width: 80vw;
+    }
 }
 
