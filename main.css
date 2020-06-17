@@ -136,12 +136,12 @@ support hover, adjust nav sizing*/
 /* LANDING PAGE */
 
 div.landing {
-	padding-top:30px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 550px;
-	position:sticky;
-	z-index: 1;
+	position:relative;
+	width:38vw;
+	margin-top:2%;
+	margin-bottom:3%;
 }
 
 ul.landing {
@@ -164,16 +164,18 @@ li.landing {
 & landscape tablets) is in landing.css */
 
 #darkwindow {
+	position:relative;
 	width: 37%;
 }
 
 #darklamp {
-	position:absolute;
-	top:46%;
+	position:relative;
+	margin-bottom:-27.4%;
+	margin-left:-37%;
 }
 
 .show {
-  		visibility: visible;
+  	visibility: visible;
   	}
 
 .hide {
@@ -220,22 +222,18 @@ hide elements and resize other elements accordingly*/
 
 
 /*for large & extra large screens that support hover, 
-nav is vertical with z-index, lightbeam is made available,
-logo and nav size are adjusted*/
+nav is vertical with z-index and font size is adjusted
+(lightbeam media queries in lightbeam.css */
 @media (min-width: 992px) and (any-hover: hover) {
-	#darkwindow{position:absolute;}
-	div.landing{width:450px;display:;}
-	li.landing{font-size: 150%;}
-	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
-	#lightbeam{	top:41.8%;right:49%;width:510px;height:137px;transform:perspective(165px) rotateY(144deg);}
+	li.landing{font-size:2vw;}
+	nav.landing{position:absolute;transform:rotate(90deg);top:46%;right:-200px;z-index:1;}
+	#lightbeam{top:42%;right:59%;width:30vw;height:10.5vw;transform:perspective(8vw) rotateY(154deg);}
 }
 
 @media (min-width: 1200px) and (any-hover: hover) {
-	div.landing{width:42vw;padding-top:2.5%;}
 	li.landing{font-size:2vw;}
 	ul.landing{width:100%;}
-	nav.landing{position:absolute;transform:rotate(90deg);top:50%;right:-9%;z-index:1;}
-	#lightbeam{top:43%;right:59%;width:30vw;height:10.3vw;transform:perspective(8vw) rotateY(154deg);}
+	nav.landing{position:absolute;transform:rotate(90deg);top:49%;right:-12%;z-index:1;}
 }
 
 
@@ -384,4 +382,3 @@ support hover, adjust layout and sizing*/
 	#bcpen{display:block;width:60vw;}
 }
 
-/* safety net for anything in portrait orientation */

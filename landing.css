@@ -29,10 +29,6 @@ a.nav-link:hover::after {
 	content:none;
 }
 
-.container {
-	margin-top:2%;
-}
-
 .row {
 	position:relative;
 	min-height: 73vh;
