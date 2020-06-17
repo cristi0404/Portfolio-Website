@@ -1,0 +1,12 @@
+/*aspect ratio media queries for lightbeam placement*/
+@media (min-aspect-ratio: 1681/1000) {
+	#lightbeam{top:42.8%;right:59%;width:30vw;height:10.5vw;transform:perspective(8vw) rotateY(154deg);}
+}
+
+@media (min-aspect-ratio: 16/9) {
+	#lightbeam{top:42%;right:59%;width:30vw;height:10.5vw;transform:perspective(8vw) rotateY(154deg);}
+}
+
+@media (min-aspect-ratio: 256/135) {
+	#lightbeam{top:42%;right:59%;width:30vw;height:10.5vw;transform:perspective(8vw) rotateY(154deg);}
+}
