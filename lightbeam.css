@@ -45,13 +45,10 @@
     #lightbeam{top:43.7%;right:63%;width:30.1vw;height:12vw;transform:perspective(8vw) rotateY(154deg);}
 }
 @media (min-aspect-ratio: 1414/1000) {
-    #lightbeam{top:44.7%;right:62.8%;width:30.1vw;height:10.1vw;transform:perspective(8vw) rotateY(154deg);}
+    #lightbeam{top:44.4%;right:59%;width:30.1vw;height:10.1vw;transform:perspective(8vw) rotateY(154deg);}
 }
 @media (min-aspect-ratio: 3/2) {
     #lightbeam{top:44.2%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio:1130/775) {
-    #lightbeam{top:43.3%;right:60%;width:30vw;height:11.2vw;transform:perspective(8vw) rotateY(154deg);}
 }
 @media (min-aspect-ratio: 16/10) {
     #lightbeam{top:44%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
