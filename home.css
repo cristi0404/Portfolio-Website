@@ -1,0 +1,15 @@
+body {
+	background: #EDE0C1;
+}
+
+.nav-link:hover {
+	color: #29828A;
+}
+
+a.nav-link::after {
+	background: #29828A;
+}
+
+.current {
+	color: #29828A;
+}
