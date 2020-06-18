@@ -175,7 +175,7 @@ li.landing {
 }
 
 .show {
-  	visibility: visible;
+  	visibility:visible;
   	}
 
 .hide {
@@ -227,7 +227,6 @@ nav is vertical with z-index and font size is adjusted
 @media (min-width: 992px) and (any-hover: hover) {
 	li.landing{font-size:2vw;}
 	nav.landing{position:absolute;transform:rotate(90deg);top:46%;right:-200px;z-index:1;}
-	#lightbeam{top:42%;right:59%;width:30vw;height:10.5vw;transform:perspective(8vw) rotateY(154deg);}
 }
 
 @media (min-width: 1200px) and (any-hover: hover) {
@@ -335,7 +334,7 @@ reveal other elements, resize them accordingly */
 	#contact-info{font-size:175%;}
 }
 
-/* desktops (horizontal navbar)*/
+/* desktops*/
 @media (min-width: 992px) {
 	#note{width:37%;margin-right:8%;margin-bottom:5%;margin-right:8%;}
 	#contact-title{font-size:180%;top: 8%;}
@@ -343,7 +342,7 @@ reveal other elements, resize them accordingly */
 	#bcpen{display:none;}
 }
 
-/*large desktops (horizontal navbar)*/
+/*large desktops*/
 @media (min-width: 1200px) {
 	#note{width:37%;margin-right:8%;margin-bottom:5%;margin-right:8%;}
 	#contact-title{font-size:2.3vw;top:8%;}
