@@ -1,3 +1,19 @@
+/*color palette
+
+landing background: #0E1C23
+landing links desktop: #0E1C23; landing links desktop hover: #FFF9DD; landing links mobile: #FFF9DD; landing links mobile active: #5EA3A0;
+
+home background: #EDE0C1
+home links: #10232D
+home links hover/active: #29828A
+
+desk background: #AE875A
+desk links: #10232D
+desk links hover/active: #FFF9DD;
+
+*/
+
+
 /*class for debugging*/
 .debug {
 	border: 2px solid white;
@@ -37,14 +53,10 @@ a:hover {
 
 .nav-link {
 	margin-right: 1em !important;
-	color: #10232D;
 	font-family: 'Montserrat', sans-serif;
+	color: #10232D;
 	font-weight: 500;
 	font-size: 112%;
-}
-
-.nav-link:hover {
-	color: #FFF9DD;
 }
 
 a.nav-link::after {
@@ -52,7 +64,6 @@ a.nav-link::after {
 	display: block;
 	width: 0;
 	height: 2px;
-	background: #FFF9DD;
 	transition: width .3s;
 }
 
@@ -60,23 +71,24 @@ a.nav-link:hover::after {
 	width: 100%;
 }
 
-.current {
-	color: #FFF9DD;
-}
-
 .navbar-nav > li > .dropdown-menu {
 	background-color: #FAF8F2;
 	border-radius: 0px;
 	border: none;
+	padding: 0px;
 }
 
 .dropdown-item:first-child, .dropdown-item:last-child {
 	border-radius: 0rem;
 }
 
+.navbar-nav > li > .dropdown-menu > a {
+	padding: 0.5rem 1.5rem;
+}
+
 .navbar-nav > li > .dropdown-menu > a:hover,
 .navbar-nav > li > .dropdown-menu > a:focus {
-	background-color: #b5b0a1;
+	background-color: #10232D;
 	color: #FAF8F2;
 }
 
