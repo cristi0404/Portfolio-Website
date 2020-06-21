@@ -34,14 +34,13 @@ a.nav-link:hover::after {
 }
 
 .row {
-	position:relative;
-	min-height: 73vh;
+	min-height: 85vh;
 }
 
 /*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
     .container{
-        max-width: 80vw;
+        max-width: 85vw;
     }
 }
 
@@ -63,8 +62,9 @@ and non-hover devices; active/hover font is blue*/
 }
 
 /*for large and extra large screens that support hover, 
-hide bootstrap navbar*/
+hide bootstrap navbar and make container display as block*/
 @media (min-width: 992px) and (any-hover: hover) {
+	.container{display:block;}
 	.navbar{display:none;}
 }
 

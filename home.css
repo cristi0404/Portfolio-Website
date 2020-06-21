@@ -13,3 +13,17 @@ a.nav-link::after {
 .current {
 	color: #29828A;
 }
+
+.container {
+	margin-top: 2.5%;
+}
+
+.row {
+	min-height: 85vh;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 85vw;
+    }
+}
