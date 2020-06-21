@@ -303,7 +303,7 @@ image placement is set
 	#laptopspace:hover #on{visibility:visible;}
 	#ipadon{visibility:hidden;}
 	#ipadspace:hover #ipadon{visibility:visible;}
-	#art{visibility:hidden;opacity:0;transition:opacity 0.3s linear;}
+	#art{visibility:hidden;opacity:0;transition:opacity 0.1s linear;}
 	#canvasspace:hover #art{visibility:visible;opacity:1;}
 
 }
