@@ -37,6 +37,7 @@ a.nav-link:hover::after {
 	min-height: 85vh;
 }
 
+
 /*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
     .container{
@@ -56,9 +57,11 @@ and non-hover devices; active/hover font is blue*/
 	a:active{color:#5EA3A0;}
 }
 
-/*for xs to medium screens, hide vertical nav*/
+/*for xs to medium screens, hide vertical nav
+and decrease row height*/
 @media (max-width: 991.98px) {
 	#verticalnav{display:none;}
+	.row{min-height:70vh;}
 }
 
 /*for large and extra large screens that support hover, 
