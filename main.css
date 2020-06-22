@@ -328,59 +328,68 @@ hide unnecessary elements (for the case of landscape tablets) */
 /*--------------------------*/
 /* ABOUT PAGE */
 
-#file {
-	position:relative;
-	width:100%;
-	margin-right:-20%;
+#pagetitle, #mobilepagetitle {
+	font-family:'Montserrat', sans-serif;
+	font-weight:600;
 }
 
-#replayarrow {
-	visibility: hidden;
+#pageinfo, #mobilepageinfo {
+	font-family:'Roboto', sans-serif;
+	font-weight:400;
 }
 
-#photograph {
-	position:relative;
-	width:20%;
-	right:57%;
-	margin-bottom:22%;
-	margin-right:-2%;
-}
-
-#paperclip {
-	position:relative;
-	width:2%;
-	right:73%;
-	margin-bottom:40.7%;
-	margin-right:-25.5%;
-}
-
-#page {
-	position:relative;
-	width:25.5%;
-	right:17.8%;
-}
-
-#pagetitle {
+#pagenumber, #mobilepagenumber {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	font-size: 1.6vw;
 }
 
-#pageinfo {
-	padding-top:5%;
-	line-height: 1.3;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	font-size: 1.3vw;
+#replayarrow, #mreplayarrow {
+	visibility:hidden;
 }
 
-#pagenumber {
-	padding-top:5%;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	font-size: 1.3vw;
+
+/* ABOUT PAGE MEDIA QUERIES */
+
+/*for large & xl screens that support hover + 
+large & xl screens in landscape that don't support hover, 
+normal image placement is set and mobile images are hidden
+	- negative margin-right on images allows for the following image
+	to be placed (the margin is usually -(width of following image))
+*/
+@media (any-hover:hover) and (min-width:992px), (min-width: 992px) and (any-hover:none) and (orientation:landscape) {
+	#file{position:relative;width:100%;margin-right:-20%;}
+	#photograph{position:relative;width:20%;right:57%;margin-bottom:22%;margin-right:-2%;}
+	#paperclip{position:relative;width:2%;right:73%;margin-bottom:40.7%;margin-right:-25.5%;}
+	#page{position:relative;width:25.5%;right:17.8%;}
+	#pagetitle{font-size:1.6vw;}
+	#pageinfo{padding-top:5%;line-height:1.3;font-size:1.3vw;}
+	#pagenumber{padding-top:5%;font-size: 1.3vw;}
+
+	#mobilepaperclip{display:none;}
+	#binderclip{display:none;}
+	#mobilefile{display:none;}
+	#mobilephotograph{display:none;}
+	#mobilepage{display:none;}
 }
 
+/*for screens with medium width and lower +
+large and xl portrait screens that don't support hover,
+hide normal images and set placement for mobile images*/
+@media (max-width:991.98px), (min-width: 992px) and (any-hover:none) and (orientation:portrait) {
+	#file{display:none;}
+	#paperclip{display:none;}
+	#photograph{display:none;}
+	#page{display:none;}
+
+	#mobilephotograph{position:relative;width:50%;margin-top:8%;margin-right:-10%;margin-left:7%;}
+	#mobilepaperclip{position:relative;width:10%;left:15%;margin-bottom:35%;margin-right:-15%;}
+	#binderclip{position:relative;width:15%;right:57%;margin-right:11%;margin-top:20%;}
+	#mobilefile{width:100%;margin-top:15%;margin-bottom:15%;margin-right:-63%;}
+	#mobilepage{position:relative;width:63%;right:22%;}
+	#mobilepagetitle{font-size:5vw;}
+	#mobilepageinfo{padding-top:5%;font-size:3.3vw;}
+	#mobilepagenumber{padding-top:5%;font-size:3.3vw;}
+}
 
 
 
