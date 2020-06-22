@@ -17,15 +17,11 @@ a.nav-link::after {
 }
 
 .container {
-	margin-top: 3%;
+	margin-top: 2%;
+	max-width: 85vw;
 }
 
 .row {
 	min-height: 85vh;
 }
 
-@media (min-width: 1200px) {
-    .container{
-        max-width: 80vw;
-    }
-}
