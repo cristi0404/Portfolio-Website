@@ -177,6 +177,10 @@ li.landing {
 	margin: 20px;
 }
 
+nav.landing {
+
+}
+
 /*bootstrap navbar styling (for xs to medium screens 
 & landscape tablets) is in landing.css */
 
@@ -210,11 +214,10 @@ li.landing {
 
 #lightbeam {
 	position:absolute;
-	background-color: #EAD6B5;
-	opacity: 0.8;
 	visibility:hidden;
+	opacity:0.8;
+	clip-path: inset(0% 0% 0% 11%);
 }
-
 
 
 /* LANDING PAGE MEDIA QUERIES */
@@ -236,6 +239,7 @@ for lamp to overlap it)*/
 	#darkwindow{right:80%;margin-right:-35%;margin-bottom:7%;}
 	li.landing{font-size: 2vw;}
 	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
+	#lightbeam{top:6.4%;right:0%;width:0%;border-top:370px solid transparent;border-right:1300px solid #EAD6B5;border-bottom:370px solid transparent;}
 }
 
 @media (min-width: 1200px) and (any-hover: hover) {
@@ -362,7 +366,7 @@ normal image placement is set and mobile images are hidden
 	#paperclip{position:relative;width:2%;right:73%;margin-bottom:40.7%;margin-right:-25.5%;}
 	#page{position:relative;width:25.5%;right:17.8%;}
 	#pagetitle{font-size:1.6vw;}
-	#pageinfo{padding-top:5%;line-height:1.3;font-size:1.3vw;}
+	#pageinfo{padding-top:5%;line-height:1.35;font-size:1.25vw;}
 	#pagenumber{padding-top:5%;font-size: 1.3vw;}
 
 	#mobilepaperclip{display:none;}
@@ -386,9 +390,9 @@ hide normal images and set placement for mobile images*/
 	#binderclip{position:relative;width:15%;right:57%;margin-right:11%;margin-top:20%;}
 	#mobilefile{width:100%;margin-top:15%;margin-bottom:15%;margin-right:-63%;}
 	#mobilepage{position:relative;width:63%;right:22%;}
-	#mobilepagetitle{font-size:5vw;}
-	#mobilepageinfo{padding-top:5%;font-size:3.3vw;}
-	#mobilepagenumber{padding-top:5%;font-size:3.3vw;}
+	#mobilepagetitle{font-size:4.9vw;}
+	#mobilepageinfo{padding-top:5%;line-height:1.6;font-size:3.2vw;}
+	#mobilepagenumber{padding-top:5%;font-size:3.2vw;}
 }
 
 
