@@ -34,10 +34,16 @@ a.nav-link:hover::after {
 }
 
 .row {
-	position:relative;
-	min-height: 73vh;
+	min-height: 85vh;
 }
 
+
+/*layout and sizing adjustments for HD screens*/
+@media (min-width: 1200px) {
+    .container{
+        max-width: 85vw;
+    }
+}
 
 /*font color is creme for devices < large 
 and non-hover devices; active/hover font is blue*/
@@ -51,13 +57,16 @@ and non-hover devices; active/hover font is blue*/
 	a:active{color:#5EA3A0;}
 }
 
-/*for xs to medium screens, hide vertical nav*/
+/*for xs to medium screens, hide vertical nav
+and decrease row height*/
 @media (max-width: 991.98px) {
-	#verticalnav{display:none;}
+	.verticalnav{display:none;}
+	.verticallogo{display:none;}
+	.row{min-height:70vh;}
 }
 
 /*for large and extra large screens that support hover, 
-hide bootstrap navbar*/
+hide bootstrap navbar and make container display as block*/
 @media (min-width: 992px) and (any-hover: hover) {
 	.navbar{display:none;}
 }
@@ -65,16 +74,10 @@ hide bootstrap navbar*/
 /*for any screen that doesn't support hover, hide verticalnav 
 and resize bootstrap navbar accordingly*/
 @media (any-hover: none) {
-	#verticalnav{display:none;}
+	.verticalnav{display:none;}
+	.verticallogo{display:none;}
 	.navbar{padding-top:7%;}
 	.navbar-brand{width:85vw;}
 	.nav-link{font-size:4.5vw;}
-}
-
-/*layout and sizing adjustments for HD screens*/
-@media (min-width: 1200px) {
-    .container{
-        max-width: 80vw;
-    }
 }
 

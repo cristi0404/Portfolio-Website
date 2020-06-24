@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.1.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 175 344.9" style="enable-background:new 0 0 175 344.9;" xml:space="preserve">
 <style type="text/css">
@@ -10,7 +10,7 @@
 	.st4{fill:#A29E8D;}
 	.st5{fill:#9CD1C1;}
 	.st6{fill:#305556;}
-	.st7{fill:#5EA3A0;}
+	.st7{display:none;fill:#5EA3A0;}
 </style>
 <g id="lamp_1_">
 	<path class="st0" d="M28.9,160l-4.1,2l73.1,146.7l4.1-2L28.9,160z M21.6,163.7l-4.1,2l73.1,146.7l4.1-2L21.6,163.7z"/>
@@ -28,7 +28,7 @@
 		c-0.6,1.4-1.4,2.7-2.5,3.9c-5.1,5.6-13.9,6.1-19.5,0.9C6.9,159.1,5.7,153.1,7.5,148z"/>
 	<path class="st1" d="M11.2,163.1c5.6,5.1,14.4,4.6,19.5-1c1.1-1.2,1.8-2.6,2.4-4c0,0-19,12-25.6-10.1
 		C5.7,153.1,6.9,159.1,11.2,163.1L11.2,163.1z M90.9,42.9l-6.7-1.1c-0.9-0.1-1.5-1-1.3-1.9l0.2-1.2c0.1-0.9,1-1.5,1.9-1.3l6.7,1.1
-		C91.7,38.5,90.9,42.9,90.9,42.9z"/>
+		L90.9,42.9z"/>
 	<path class="st2" d="M146.5,94c27-38.9,14.4-86.6,14.4-86.6l-15,65L146.5,94z"/>
 	<path class="st3" d="M155.8,37.6c1.7,1,3.3,2.4,4.6,4.2c4.6,6.5,3.1,15.6-3.4,20.2c-1.7,1.2-3.7,2-5.6,2.4
 		C151.4,64.4,155.8,37.6,155.8,37.6z"/>

@@ -4,17 +4,30 @@ body {
 	background-size: 100vw;
 }
 
+.nav-link:hover {
+	color: #FFF9DD;
+}
+
+a.nav-link::after {
+	background: #FFF9DD;
+}
+
+.current {
+	color: #FFF9DD;
+}
+
 .container {
-	margin-top: 3%;
+	margin-top: 2%;
 }
 
 .row {
 	min-height: 85vh;
 }
 
+/*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
     .container{
-        max-width: 80vw;
+        max-width: 85vw;
     }
 }
 
