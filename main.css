@@ -19,6 +19,7 @@ desk links hover/active: #FFF9DD;
 	border: 2px solid white;
 }
 
+
 body {
 	padding: 0;
 	margin: 0;
@@ -33,6 +34,9 @@ a:hover {
 	color: #2B848B;
 }
 
+title {
+	pointer-events: none;
+}
 
 
 /*--------------------------*/
