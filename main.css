@@ -30,10 +30,6 @@ a:hover {
 	color: #2B848B;
 }
 
-title {
-	pointer-events: none;
-}
-
 
 /*--------------------------*/
 /* NAVBAR */
@@ -114,7 +110,7 @@ and resize navbar accordingly */
 
 /* portrait tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
-	.navbar{padding-top:40px;}
+	.navbar{padding-top:30px;}
 	.navbar-brand{width:75vw;}
 	.nav-link{font-size:4vw;}
 }
@@ -255,7 +251,7 @@ for lamp to overlap it)*/
 	#darklamp{margin-right:-52.5%;}
 	li.landing{font-size: 2vw;}
 	nav.landing{left:265%;top:43%;}
-	#lightbeam{top:4%;right:0%;width:0%;border-top:370px solid transparent;border-right:1300px solid #EAD6B5;border-bottom:370px solid transparent;}
+	#lightbeam{top:4.3%;right:0%;width:0%;border-top:370px solid transparent;border-right:1300px solid #EAD6B5;border-bottom:370px solid transparent;}
 }
 
 @media (min-width: 1200px) and (any-hover: hover) {
@@ -276,7 +272,6 @@ hide unnecessary elements and resize accordingly (aka landscape tablets) */
 
 @media (any-hover: none) and (min-width: 992px) {
 	#darkwindow{width:80%;margin-top:5%;margin-bottom:10%;}
-	.row{justify-content:center !important;} /*overrides justify-content-lg-start*/
 }
 
 
