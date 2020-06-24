@@ -91,6 +91,10 @@ a.nav-link:hover::after {
 	padding: 0.5rem 1.5rem;
 }
 
+.navbar-nav:first-child {
+	margin-left:0.5em;
+}
+
 .navbar-nav > li > .dropdown-menu > a:hover,
 .navbar-nav > li > .dropdown-menu > a:focus {
 	background-color: #10232D;
@@ -157,22 +161,36 @@ support hover, adjust nav sizing*/
 /*--------------------------*/
 /* LANDING PAGE */
 
+/*logo*/
 div.landing {
 	margin-right: auto;
 	margin-left: auto;
-	position:relative;
 	width: 550px;
 	margin-top:2%;
 }
 
-ul.landing {
-	margin:auto;
-	text-align:center;
-	padding:0px;
-	width:550px;
-	list-style-type: none;
+/*desktop nav container*/
+div.verticalnav {
+	padding-right:10%;
 }
 
+/*desktop nv*/
+nav.landing {
+	position:relative;
+	-webkit-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+
+/*desktop nav list*/
+ul.landing {
+	text-align:center;
+	padding:0px;
+	list-style-type: none;
+	width:100%;
+}
+
+/*desktop nav list items */
 li.landing {
 	display: inline;
 	font-family: 'Montserrat', sans-serif;
@@ -181,9 +199,6 @@ li.landing {
 	margin: 20px;
 }
 
-nav.landing {
-
-}
 
 /*bootstrap navbar styling (for xs to medium screens 
 & landscape tablets) is in landing.css */
@@ -241,16 +256,16 @@ and window placement is set (negative margin on window allows
 for lamp to overlap it)*/
 @media (min-width: 992px) and (any-hover: hover) {
 	#darkwindow{right:80%;margin-right:-35%;margin-bottom:7%;}
+	#darklamp{margin-right:-52.5%;}
 	li.landing{font-size: 2vw;}
-	nav.landing{position:fixed;transform:rotate(90deg);top:50%;right:-200px;z-index:1;}
-	#lightbeam{top:6.4%;right:0%;width:0%;border-top:370px solid transparent;border-right:1300px solid #EAD6B5;border-bottom:370px solid transparent;}
+	nav.landing{left:265%;top:43%;}
+	#lightbeam{top:4%;right:0%;width:0%;border-top:370px solid transparent;border-right:1300px solid #EAD6B5;border-bottom:370px solid transparent;}
 }
 
 @media (min-width: 1200px) and (any-hover: hover) {
+	#darklamp{margin-right:-48.5%;}
 	div.landing{width:42vw;}
-	li.landing{font-size:2vw;}
-	ul.landing{width:100%;}
-	nav.landing{position:absolute;transform:rotate(90deg);top:50%;right:-9%;z-index:1;}
+	nav.landing{left:285%;top:43%;}
 }
 
 /*lightbeam styling is in lightbeam.css*/
