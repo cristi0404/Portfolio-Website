@@ -33,6 +33,7 @@ a.nav-link:hover::after {
 	margin-top:2%;
 }
 
+/*forces row to center on page*/
 .row {
 	min-height: 85vh;
 }
@@ -47,21 +48,16 @@ a.nav-link:hover::after {
 
 /*font color is creme for devices < large 
 and non-hover devices; active/hover font is blue*/
-@media (max-width: 991.98px) {
+@media (max-width: 991.98px), (any-hover: none) {
 	a{color:#FFF9DD;}
 	a:hover{color:#5EA3A0;}
 }
 
-@media (any-hover: none) {
-	a{color:#FFF9DD;}
-	a:active{color:#5EA3A0;}
-}
-
 /*for xs to medium screens, hide vertical nav
-and decrease row height*/
+and adjust row height*/
 @media (max-width: 991.98px) {
 	.verticalnav{display:none;}
-	.verticallogo{display:none;}
+	div.landing{display:none;}
 	.row{min-height:70vh;}
 }
 
@@ -75,9 +71,6 @@ hide bootstrap navbar and make container display as block*/
 and resize bootstrap navbar accordingly*/
 @media (any-hover: none) {
 	.verticalnav{display:none;}
-	.verticallogo{display:none;}
-	.navbar{padding-top:7%;}
-	.navbar-brand{width:85vw;}
-	.nav-link{font-size:4.5vw;}
+	div.landing{display:none;}
 }
 

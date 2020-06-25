@@ -1,6 +1,6 @@
 body {
 	background: #AF875A;
-	background-image: url(graphics/woodgrain.svg);
+	background-image: url(../graphics/woodgrain.svg);
 	background-size: 100vw;
 }
 
@@ -21,13 +21,15 @@ a.nav-link::after {
 }
 
 .row {
-	min-height: 85vh;
+	min-height:85vh;
 }
 
 /*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
-    .container{
-        max-width: 85vw;
-    }
+    .container{max-width:85vw;}
 }
 
+/*layout adjustment for landscape tablets*/
+@media (any-hover:none) and (min-width:992px) and (orientation:landscape) {
+	.row{min-height:75vh;}
+}

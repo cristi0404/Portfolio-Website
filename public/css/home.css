@@ -14,6 +14,7 @@ a.nav-link::after {
 	color: #29828A;
 }
 
+/*matches with the level of the container on landing page*/
 .container {
 	margin-top: 2.5%;
 }
@@ -22,8 +23,12 @@ a.nav-link::after {
 	min-height: 85vh;
 }
 
+/*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
-    .container{
-        max-width: 85vw;
-    }
+    .container{max-width: 85vw;}
+}
+
+/*layout adjustments for landscape tablets*/
+@media (any-hover:none) and (min-width:992px) and (orientation:landscape) {
+	.container{margin-top:0%;}
 }

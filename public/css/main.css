@@ -49,7 +49,7 @@ a:hover {
 }
 
 .nav-link {
-	margin-right: 1em !important;
+	margin: 0em 0.6em !important;
 	font-family: 'Montserrat', sans-serif;
 	color: #10232D;
 	font-weight: 500;
@@ -83,9 +83,6 @@ a.nav-link:hover::after {
 	padding: 0.5rem 1.5rem;
 }
 
-.navbar-nav:first-child {
-	margin-left:0.5em;
-}
 
 .navbar-nav > li > .dropdown-menu > a:hover,
 .navbar-nav > li > .dropdown-menu > a:focus {
@@ -237,7 +234,7 @@ li.landing {
 hide elements and resize other elements accordingly*/
 @media (max-width: 991.98px) {
 	#darklamp{display:none;}
-	#darkwindow{width:80%; margin-top:3%;margin-bottom:5%;}
+	#darkwindow{width:80%; margin-top:8%;margin-bottom:5%;}
 	#lightbeam{display:none;}
 }
 
@@ -271,7 +268,7 @@ hide unnecessary elements and resize accordingly (aka landscape tablets) */
 }
 
 @media (any-hover: none) and (min-width: 992px) {
-	#darkwindow{width:80%;margin-top:5%;margin-bottom:10%;}
+	#darkwindow{width:80%;margin-top:3%;margin-bottom:7%;}
 }
 
 
@@ -290,10 +287,16 @@ hide elements and resize other elements accordingly*/
 	#postits{display:none;}
 	#worldmap{display:none;}
 	#mug{display:none;}
-	#laptop{width:75%;margin-bottom:20%;margin-top:8%;}
-	#ipad{width:50%;margin-bottom:20%;}
-	#canvas{width:60%;margin-bottom:20%;}
+	#laptop{width:75%;margin:8% auto 20% auto;}
+	#ipad{width:50%;margin:0% auto 20% auto;}
+	#canvas{width:60%;margin:0% auto 20% auto;}
 	#desk{display:none;}
+}
+
+@media (max-width: 575.98px) {
+	#laptop{width:80%;}
+	#ipad{width:60%;}
+	#canvas{width:70%;}
 }
 
 /*for large & extra large screens that support hover, 
@@ -331,9 +334,9 @@ hide unnecessary elements (for the case of landscape tablets) */
 	#postits{display:none;}
 	#worldmap{display:none;}
 	#mug{display:none;}
-	#laptop{width:70%;margin-top:8%;margin-bottom:15%;}
-	#ipad{width:45%;margin-bottom:15%;}
-	#canvas{width:56%;margin-bottom:15%;}
+	#laptop{width:35%;margin-right:8%;}
+	#ipad{width:23%;margin-right:8%;}
+	#canvas{width:23%;}
 	#desk{display:none;}
 }
 
@@ -387,23 +390,23 @@ hide normal images and set placement for mobile images*/
 	#mobilephotograph{margin-left:10%;}
 	#mobilefile{width:95%;margin-right:-61%;}
 
-	#mobilepage{width:61%;margin-top:-105%;}
+	#mobilepage{width:61%;margin-top:-104%;}
 	#mobilepagetitle{font-size:5.6vw;}
-	#mobilepageinfo{font-size:3.7vw;margin-top:18%;}
+	#mobilepageinfo{font-size:3.7vw;margin-top:17%;}
 	#mobilepagenumber{font-size:3.7vw;margin-top:158%;}
 }
 
 @media (min-width:576px) {
-	#mobilepage{margin-top:-105%;}
+	#mobilepage{margin-top:-108%;}
 	#mobilepagetitle{font-size:200%;}
 	#mobilepageinfo{font-size:130%;margin-top:18%;}
-	#mobilepagenumber{font-size:130%;margin-top:155%;}
+	#mobilepagenumber{font-size:130%;margin-top:158%;}
 }
 
 @media (min-width:768px) {
-	#mobilepage{margin-top:-105%;}
-	#mobilepagetitle{font-size:260%;}
-	#mobilepageinfo{font-size:172%;margin-top:18%;}
+	#mobilepage{margin-top:-107%;}
+	#mobilepagetitle{font-size:250%;}
+	#mobilepageinfo{line-height:1.4;font-size:172%;margin-top:18%;}
 	#mobilepagenumber{font-size:172%;margin-top:157%;}
 }
 
@@ -429,29 +432,12 @@ normal image placement is set and mobile images are hidden
 
 @media (min-width:1200px) and (any-hover:hover) {
 	#pagetitle{font-size:1.8vw;}
-	#pageinfo{font-size:1.15vw;margin-top:17%;}
-	#pagenumber{font-size:1.15vw;margin-top:152%;}
+	#pageinfo{line-height:1.4;font-size:1.2vw;margin-top:17%;}
+	#pagenumber{font-size:1.2vw;margin-top:152%;}
 }
 
 /*landscape tablets*/
 @media (min-width:992px) and (any-hover:none) and (orientation:landscape) {
-	#file{position:relative;width:100%;margin-right:-20%;}
-	#photograph{position:relative;width:20%;right:57%;margin-bottom:22%;margin-right:-2%;}
-	#paperclip{position:relative;width:2%;right:73%;margin-bottom:40.7%;margin-right:-25.5%;}
-	#page{position:relative;width:25.5%;right:17.8%;margin-top:-40%;}
-
-	#mobilepaperclip{display:none;}
-	#binderclip{display:none;}
-	#mobilefile{display:none;}
-	#mobilephotograph{display:none;}
-	#mobilepage{display:none;}
-
-	#pagetitle{font-size:130%;}
-	#pageinfo{font-size:83%;margin-top:17%;}
-	#pagenumber{font-size:83%;margin-top:148%;}
-}
-
-@media (min-width:1200px) and (any-hover:none) and (orientation:landscape) {
 	#file{position:relative;width:100%;margin-right:-20%;}
 	#photograph{position:relative;width:20%;right:57%;margin-bottom:22%;margin-right:-2%;}
 	#paperclip{position:relative;width:2%;right:73%;margin-bottom:40.7%;margin-right:-25.5%;}
@@ -463,6 +449,12 @@ normal image placement is set and mobile images are hidden
 	#mobilephotograph{display:none;}
 	#mobilepage{display:none;}
 
+	#pagetitle{font-size:120%;}
+	#pageinfo{font-size:84%;margin-top:17%;}
+	#pagenumber{font-size:83%;margin-top:150%;}
+}
+
+@media (min-width:1200px) and (any-hover:none) and (orientation:landscape) {
 	#pagetitle{font-size:150%;}
 	#pageinfo{font-size:100%;margin-top:17%;}
 	#pagenumber{font-size:100%;margin-top:150%;}
@@ -554,10 +546,10 @@ reveal other elements, resize them accordingly */
 
 /*portrait phones*/
 @media (max-width: 575.98px) {
-	#note{width:80%;}
-	#contact-title{font-size:6.1vw;top:8%;}
-	#contact-info{font-size:4.4vw;}
-	#bcpen{width:85vw;}
+	#note{width:77%;}
+	#contact-title{font-size:5.8vw;top:8%;}
+	#contact-info{font-size:4.2vw;}
+	#bcpen{width:95vw;}
 }
 
 /*landscape phones*/
@@ -569,9 +561,9 @@ reveal other elements, resize them accordingly */
 
 /*tablets*/
 @media (min-width: 768px) {
-	#note{width:70%;}
-	#contact-title{font-size:240%;top:8%;}
-	#contact-info{font-size:175%;}
+	#note{width:60%;}
+	#contact-title{font-size:220%;top:8%;}
+	#contact-info{font-size:150%;}
 }
 
 /* desktops */
@@ -598,9 +590,9 @@ hide unnecessary elements (for the case of landscape tablets) */
 
 @media (any-hover: none) and (min-width: 992px) {
 	#pen{width:7%;}
-	#note{width:50%;margin-top:3%;}
-	#contact-title{font-size:225%;top:8%;}
-	#contact-info{font-size:162%;}
+	#note{width:45%;margin-top:3%;}
+	#contact-title{font-size:220%;top:8%;}
+	#contact-info{font-size:148%;}
 }
 
 @media (any-hover: none) and (min-width: 1200px) {
