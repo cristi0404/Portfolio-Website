@@ -287,16 +287,19 @@ hide elements and resize other elements accordingly*/
 	#postits{display:none;}
 	#worldmap{display:none;}
 	#mug{display:none;}
-	#laptop{width:75%;margin:8% auto 20% auto;}
-	#ipad{width:50%;margin:0% auto 20% auto;}
-	#canvas{width:60%;margin:0% auto 20% auto;}
+	#laptop{display:none;}
+	#ipad{display:none;}
+	#canvas{display:none;}
+	#mobilelaptop{width:75%;margin:8% auto 20% auto;}
+	#mobileipad{width:50%;margin:0% auto 20% auto;}
+	#mobilecanvas{width:60%;margin:0% auto 20% auto;}
 	#desk{display:none;}
 }
 
 @media (max-width: 575.98px) {
-	#laptop{width:80%;}
-	#ipad{width:60%;}
-	#canvas{width:70%;}
+	#mobilelaptop{width:80%;}
+	#mobileipad{width:55%;}
+	#mobilecanvas{width:65%;}
 }
 
 /*for large & extra large screens that support hover, 
@@ -306,6 +309,10 @@ image placement is set
 */
 
 @media (any-hover: hover) and (min-width: 992px) {
+	#mobilelaptop{display:none;}
+	#mobileipad{display:none;}
+	#mobilecanvas{display:none;}
+
 	#window{position:relative;width: 37%;right:80%;margin-right:-35%;margin-bottom:7%;margin-right:-35%;}
 	#lamp{position:relative;width: 16%;margin-left:-82%;margin-top:17%;margin-right:-12%;z-index:1;}
 	#postits{position:relative;width:12%;left:35%;margin-bottom:25%;margin-right:-40%;}
@@ -329,14 +336,17 @@ image placement is set
 hide unnecessary elements (for the case of landscape tablets) */
 
 @media (any-hover:none) and (min-width:992px) {
+	#laptop{display:none;}
+	#ipad{display:none;}
+	#canvas{display:none;}
 	#window{display:none;}
 	#lamp{display:none;}
 	#postits{display:none;}
 	#worldmap{display:none;}
 	#mug{display:none;}
-	#laptop{width:35%;margin-right:8%;}
-	#ipad{width:23%;margin-right:8%;}
-	#canvas{width:23%;}
+	#mobilelaptop{width:35%;margin-right:8%;}
+	#mobileipad{width:23%;margin-right:8%;}
+	#mobilecanvas{width:23%;}
 	#desk{display:none;}
 }
 
