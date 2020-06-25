@@ -1,0 +1,29 @@
+body {
+	background: #EDE0C1;
+}
+
+.nav-link:hover {
+	color: #29828A;
+}
+
+a.nav-link::after {
+	background: #29828A;
+}
+
+.current {
+	color: #29828A;
+}
+
+.container {
+	margin-top: 2.5%;
+}
+
+.row {
+	min-height: 85vh;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 85vw;
+    }
+}
