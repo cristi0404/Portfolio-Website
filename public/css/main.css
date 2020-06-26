@@ -373,12 +373,17 @@ hide unnecessary elements (for the case of landscape tablets) */
 	font-weight: 600;
 }
 
-.indent {
-	padding-left:23%;
+.quote {
+	padding-left:15%;
+	font-weight:500;
 }
 
 #replayarrow, #mreplayarrow {
 	visibility: hidden;
+}
+
+#arrowspace, #marrowspace {
+	cursor: pointer;
 }
 
 
@@ -411,17 +416,17 @@ hide normal images and set placement for mobile images*/
 }
 
 @media (min-width:576px) {
-	#mobilepage{margin-top:-108%;}
-	#mobilepagetitle{font-size:200%;}
+	#mobilepage{margin-top:-110%;}
+	#mobilepagetitle{font-size:180%;}
 	#mobilepageinfo{line-height:1.3;font-size:130%;margin-top:15%;}
-	#mobilepagenumber{font-size:130%;margin-top:158%;}
+	#mobilepagenumber{font-size:130%;margin-top:161%;}
 }
 
 @media (min-width:768px) {
 	#mobilepage{margin-top:-107%;}
 	#mobilepagetitle{font-size:250%;}
-	#mobilepageinfo{line-height:1.3;font-size:172%;margin-top:15%;}
-	#mobilepagenumber{font-size:172%;margin-top:158%;}
+	#mobilepageinfo{line-height:1.3;font-size:171%;margin-top:15%;}
+	#mobilepagenumber{font-size:171%;margin-top:158%;}
 }
 
 /*for large & xl screens that support hover,
@@ -447,7 +452,7 @@ normal image placement is set and mobile images are hidden
 @media (min-width:1200px) and (any-hover:hover) {
 	#pagetitle{font-size:1.6vw;}
 	#pageinfo{line-height:1.4;font-size:1.2vw;margin-top:15%;}
-	#pagenumber{font-size:1.2vw;margin-top:152%;}
+	#pagenumber{font-size:1.4vw;margin-top:152%;}
 }
 
 /*landscape tablets*/
@@ -455,7 +460,7 @@ normal image placement is set and mobile images are hidden
 	#file{position:relative;width:100%;margin-right:-20%;}
 	#photograph{position:relative;width:20%;right:57%;margin-bottom:22%;margin-right:-2%;}
 	#paperclip{position:relative;width:2%;right:73%;margin-bottom:40.7%;margin-right:-25.5%;}
-	#page{position:relative;width:25.5%;right:17.8%;margin-top:-41%;}
+	#page{position:relative;width:25.5%;right:17.8%;margin-top:-42%;}
 
 	#mobilepaperclip{display:none;}
 	#binderclip{display:none;}
@@ -464,8 +469,8 @@ normal image placement is set and mobile images are hidden
 	#mobilepage{display:none;}
 
 	#pagetitle{font-size:120%;}
-	#pageinfo{font-size:84%;margin-top:15%;}
-	#pagenumber{font-size:83%;margin-top:150%;}
+	#pageinfo{line-height:1.4;font-size:85%;margin-top:15%;}
+	#pagenumber{font-size:85%;margin-top:152%;}
 }
 
 @media (min-width:1200px) and (any-hover:none) and (orientation:landscape) {
