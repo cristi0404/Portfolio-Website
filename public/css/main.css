@@ -377,7 +377,7 @@ hide unnecessary elements (for the case of landscape tablets) */
 	padding-left:23%;
 }
 
-#replayarrow {
+#replayarrow, #mreplayarrow {
 	visibility: hidden;
 }
 
