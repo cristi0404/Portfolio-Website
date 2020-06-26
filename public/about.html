@@ -45,7 +45,7 @@
 			<div class="row align-items-center justify-content-center">
 				
 				<svg id="file" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1190.1 564">
-					<title>Open Manila folder with pages</title>
+					<title id="filetitle">Open Manila folder with a stack of pages inside</title>
 					<style type="text/css">
 						.st0{opacity:0.25;fill:#10232D;enable-background:new    ;}
 						.st1{fill:#E5D7B5;}
@@ -147,7 +147,7 @@
 				</svg>
 
 				<img id="photograph" src="graphics/photograph.png" alt="Photograph of Cristina Villegas">
-				<img id="paperclip" src="graphics/paperclip.svg" alt="Paperclip">
+				<img id="paperclip" src="graphics/paperclip.svg" alt="Paperclip" role="image">
 
 				<div id="page">
 					<h1 id="pagetitle">Hi,</h1>
@@ -162,11 +162,11 @@
 				<!--elements for screens < 992px -->
 
 				<img id="mobilephotograph" src="graphics/mobilephotograph.png" alt="Photograph of Cristina Villegas">
-				<img id="mobilepaperclip" src="graphics/mobilepaperclip.svg" alt="Paperclip">
-				<img id="binderclip" src="graphics/binderclip.svg" alt="Binder clip">
+				<img id="mobilepaperclip" src="graphics/mobilepaperclip.svg" alt="Paperclip" role="image">
+				<img id="binderclip" src="graphics/binderclip.svg" alt="Binder clip" role="image">
 
 				<svg id="mobilefile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 261.7 318.6">
-					<title>Closed Manila folder with pages on top</title>
+					<title>Closed Manila folder with a stack of pages on top</title>
 					<style type="text/css">
 						.st20{fill:#BAAE95;}
 						.st21{opacity:0.25;fill:#10232D;enable-background:new    ;}
@@ -387,7 +387,17 @@
 	    	}
 	    	
 
+	    	/*hide svg titles on hover*/
 
+	    	var file = document.getElementById('file');
+			var filetitle = document.getElementById("filetitle");
+
+			file.onmouseover = function() {
+				filetitle.innerHTML = "";
+			}
+			file.onmouseout = function() {
+				filetitle.innerHTML = "Open Manila folder with a stack of pages inside";
+			}
 
 
 	    </script>
