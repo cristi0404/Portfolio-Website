@@ -161,6 +161,11 @@
 			var lampswitch = document.getElementById('lampswitch');
 			lampswitch.volume = 0.5;
 
+			function playSound() {
+				lampswitch.currentTime = 0;
+				lampswitch.play();
+			}
+
 
 			/*lamp blinking effect*/
 			function show() {
@@ -206,7 +211,7 @@
 
 
 			darklamp.onclick = function() {
-				lampswitch.play();
+				playSound();
 
 				if (elementClicked == false) {
 					darklampon();

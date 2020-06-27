@@ -241,6 +241,11 @@
 	    	var pageturn = document.getElementById('pageturn');
 	    	pageturn.volume = 0.5;
 
+	    	function playSound() {
+				pageturn.currentTime = 0;
+				pageturn.play();
+			}
+
 	    	/*event handling for wide screens*/
 	    	var nextarrow = document.getElementById('nextarrow');
 	    	var replayarrow = document.getElementById('replayarrow');
@@ -300,7 +305,7 @@
 	    	}
 
 	    	arrowspace.onclick = function() {
-	    		pageturn.play();
+	    		playSound();
 
 	    		if (clickCount == 0) {
 	    			firstClick();
@@ -379,7 +384,7 @@
 	    	}
 
 	    	marrowspace.onclick = function() {
-	    		pageturn.play();
+	    		playSound();
 
 	    		if (mclickCount == 0) {
 	    			mfirstClick();
