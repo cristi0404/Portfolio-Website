@@ -40,16 +40,27 @@
 			</div>
 		</nav>
 
-		<div class="container">
+		<div class="container mobile">
+			<div class="row justify-content-center flex-column">
+				<img id="mobilelaptop" src="graphics/mobilelaptop.svg" alt="Open laptop that links to graphic design portfolio" role="image">
+
+				<img id="mobileipad" src="graphics/mobileipad.svg" alt="Propped up iPad that links to digital art portfolio" role="image">
+
+				<img id="mobilecanvas" src="graphics/mobilecanvas.svg" alt="Canvas on easle that links to art portfolio" role="image">
+
+			</div>
+		</div>
+
+		<div class="container full">
 			<div class="row justify-content-center flex-column flex-lg-row">
-				<img id="window" src="graphics/window.svg" alt="Window view of a night sky">
-				<img id="lamp" src="graphics/lamp.svg" alt="desk lamp">
-				<img id="postits" src="graphics/postits.svg" alt="Postcards pinned to the wall">
-				<img id="worldmap" src="graphics/worldmap.svg" alt="World map pinned to the wall">
-				<img id="mug" src="graphics/mug.svg" alt="mug with an earl grey tea bag">
+				<img id="window" src="graphics/window.svg" alt="Window view of a night sky" role="image">
+				<img id="lamp" src="graphics/lamp.svg" alt="Desk lamp" role="image">
+				<img id="postits" src="graphics/postits.svg" alt="Postcards pinned to the wall" role="image">
+				<img id="worldmap" src="graphics/worldmap.svg" alt="World map pinned to the wall" role="image">
+				<img id="mug" src="graphics/mug.svg" alt="Mug with an earl grey tea bag" role="image">
 
 				<svg id="laptop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 447.4 259.5">
-					<title>Open laptop that links to graphic design portfolio</title>
+					<title id="laptoptitle">Open laptop that links to graphic design portfolio</title>
 					<style type="text/css">
 						.st0{fill:#030203;}
 						.st1{fill:#757C83;}
@@ -124,9 +135,8 @@
 					</a>
 				</svg>
 
-
 				<svg id="ipad" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 251.2 170">
-					<title>Propped up iPad that links to digital art portfolio</title>
+					<title id="ipadtitle">Propped up iPad that links to digital art portfolio</title>
 					<style type="text/css">
 						.st12{fill:#FFFFFF;}
 						.st13{fill:#CECECD;}
@@ -202,7 +212,7 @@
 				</svg>
 
 				<svg id="canvas" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 340.1 508.1">
-					<title>Canvas on easle that links to art portfolio</title>
+					<title id="canvastitle">Canvas on easle that links to art portfolio</title>
 					<style type="text/css">
 						.st30{opacity:0.4;fill:#532B16;enable-background:new    ;}
 						.st31{fill:#84491F;}
@@ -313,11 +323,45 @@
 					</a>
 				</svg>
 
-				<img id="desk" src="graphics/desk.svg" alt="wooden desk">
+				<img id="desk" src="graphics/desk.svg" alt="wooden desk" role="image">
 
 			</div>	
 		</div>
 
+		<script>
+
+			/*hide svg titles on hover*/
+
+			var laptop = document.getElementById('laptop');
+			var ipad = document.getElementById('ipad');
+			var canvas = document.getElementById('canvas');
+
+			var laptoptitle = document.getElementById('laptoptitle');
+			var ipadtitle = document.getElementById('ipadtitle');
+			var canvastitle = document.getElementById('canvastitle');
+
+			laptop.onmouseover = function() {
+				laptoptitle.innerHTML = "";
+			}
+			laptop.onmouseout = function() {
+				laptoptitle.innerHTML = "Open laptop that links to graphic design portfolio";
+			}
+
+			ipad.onmouseover = function() {
+				ipadtitle.innerHTML = "";
+			}
+			ipad.onmouseout = function() {
+				ipadtitle.innerHTML = "Propped up iPad that links to digital art portfolio";
+			}
+
+			canvas.onmouseover = function() {
+				canvastitle.innerHTML = "";
+			}
+			canvas.onmouseout = function() {
+				canvastitle.innerHTML = "Canvas on easle that links to art portfolio";
+			}
+
+		</script>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

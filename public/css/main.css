@@ -30,6 +30,10 @@ a:hover {
 	color: #2B848B;
 }
 
+audio {
+	visibility: hidden;
+}
+
 
 /*--------------------------*/
 /* NAVBAR */
@@ -287,16 +291,21 @@ hide elements and resize other elements accordingly*/
 	#postits{display:none;}
 	#worldmap{display:none;}
 	#mug{display:none;}
-	#laptop{width:75%;margin:8% auto 20% auto;}
-	#ipad{width:50%;margin:0% auto 20% auto;}
-	#canvas{width:60%;margin:0% auto 20% auto;}
+	#laptop{display:none;}
+	#ipad{display:none;}
+	#canvas{display:none;}
 	#desk{display:none;}
+	div.full{display:none;}
+
+	#mobilelaptop{width:75%;margin:8% auto 20% auto;}
+	#mobileipad{width:50%;margin:0% auto 20% auto;}
+	#mobilecanvas{width:60%;margin:0% auto 20% auto;}
 }
 
 @media (max-width: 575.98px) {
-	#laptop{width:80%;}
-	#ipad{width:60%;}
-	#canvas{width:70%;}
+	#mobilelaptop{width:80%;}
+	#mobileipad{width:55%;}
+	#mobilecanvas{width:65%;}
 }
 
 /*for large & extra large screens that support hover, 
@@ -306,6 +315,8 @@ image placement is set
 */
 
 @media (any-hover: hover) and (min-width: 992px) {
+	div.mobile{display:none;}
+
 	#window{position:relative;width: 37%;right:80%;margin-right:-35%;margin-bottom:7%;margin-right:-35%;}
 	#lamp{position:relative;width: 16%;margin-left:-82%;margin-top:17%;margin-right:-12%;z-index:1;}
 	#postits{position:relative;width:12%;left:35%;margin-bottom:25%;margin-right:-40%;}
@@ -334,10 +345,15 @@ hide unnecessary elements (for the case of landscape tablets) */
 	#postits{display:none;}
 	#worldmap{display:none;}
 	#mug{display:none;}
-	#laptop{width:35%;margin-right:8%;}
-	#ipad{width:23%;margin-right:8%;}
-	#canvas{width:23%;}
+	#laptop{display:none;}
+	#ipad{display:none;}
+	#canvas{display:none;}
 	#desk{display:none;}
+	div.full{display:none;}
+
+	#mobilelaptop{width:55%;margin:8% auto 5% auto;}
+	#mobileipad{width:35%;margin:8% auto 5% auto;}
+	#mobilecanvas{width:45%;margin:8% auto 15% auto;}
 }
 
 
@@ -363,8 +379,17 @@ hide unnecessary elements (for the case of landscape tablets) */
 	font-weight: 600;
 }
 
+.quote {
+	padding-left:13%;
+	font-weight:500;
+}
+
 #replayarrow, #mreplayarrow {
-	visibility:hidden;
+	visibility: hidden;
+}
+
+#arrowspace, #marrowspace {
+	cursor: pointer;
 }
 
 
@@ -388,26 +413,26 @@ hide normal images and set placement for mobile images*/
 @media (max-width:575.98px) {
 
 	#mobilephotograph{margin-left:10%;}
-	#mobilefile{width:95%;margin-right:-61%;}
+	#mobilefile{width:95%;margin-right:-63%;}
 
-	#mobilepage{width:61%;margin-top:-104%;}
-	#mobilepagetitle{font-size:5.6vw;}
-	#mobilepageinfo{font-size:3.7vw;margin-top:17%;}
-	#mobilepagenumber{font-size:3.7vw;margin-top:158%;}
+	#mobilepage{width:63%;right:20.5%;margin-top:-123%;}
+	#mobilepagetitle{font-size:5.7vw;}
+	#mobilepageinfo{line-height:1.3;font-size:4.3vw;margin-top:18%;}
+	#mobilepagenumber{font-size:4.3vw;margin-top:179%;}
 }
 
 @media (min-width:576px) {
-	#mobilepage{margin-top:-108%;}
-	#mobilepagetitle{font-size:200%;}
-	#mobilepageinfo{font-size:130%;margin-top:18%;}
-	#mobilepagenumber{font-size:130%;margin-top:158%;}
+	#mobilepage{margin-top:-125%;}
+	#mobilepagetitle{font-size:180%;}
+	#mobilepageinfo{line-height:1.3;font-size:145%;margin-top:18%;}
+	#mobilepagenumber{font-size:145%;margin-top:183%;}
 }
 
 @media (min-width:768px) {
-	#mobilepage{margin-top:-107%;}
-	#mobilepagetitle{font-size:250%;}
-	#mobilepageinfo{line-height:1.4;font-size:172%;margin-top:18%;}
-	#mobilepagenumber{font-size:172%;margin-top:157%;}
+	#mobilepage{margin-top:-125%;}
+	#mobilepagetitle{font-size:260%;}
+	#mobilepageinfo{line-height:1.3;font-size:185%;margin-top:18%;}
+	#mobilepagenumber{font-size:185%;margin-top:183%;}
 }
 
 /*for large & xl screens that support hover,
@@ -425,15 +450,15 @@ normal image placement is set and mobile images are hidden
 	#mobilephotograph{display:none;}
 	#mobilepage{display:none;}
 
-	#pagetitle{font-size:130%;}
-	#pageinfo{font-size:83%;margin-top:17%;}
-	#pagenumber{font-size:83%;margin-top:146%;}
+	#pagetitle{font-size:120%;}
+	#pageinfo{line-height:1.4;font-size:92.5%;margin-top:15%;}
+	#pagenumber{font-size:92.5%;margin-top:152%;}
 }
 
 @media (min-width:1200px) and (any-hover:hover) {
-	#pagetitle{font-size:1.8vw;}
-	#pageinfo{line-height:1.4;font-size:1.2vw;margin-top:17%;}
-	#pagenumber{font-size:1.2vw;margin-top:152%;}
+	#pagetitle{font-size:1.9vw;}
+	#pageinfo{line-height:1.4;font-size:1.35vw;margin-top:15%;}
+	#pagenumber{font-size:1.4vw;margin-top:152%;}
 }
 
 /*landscape tablets*/
@@ -441,7 +466,7 @@ normal image placement is set and mobile images are hidden
 	#file{position:relative;width:100%;margin-right:-20%;}
 	#photograph{position:relative;width:20%;right:57%;margin-bottom:22%;margin-right:-2%;}
 	#paperclip{position:relative;width:2%;right:73%;margin-bottom:40.7%;margin-right:-25.5%;}
-	#page{position:relative;width:25.5%;right:17.8%;margin-top:-41%;}
+	#page{position:relative;width:25.5%;right:17.8%;margin-top:-42%;}
 
 	#mobilepaperclip{display:none;}
 	#binderclip{display:none;}
@@ -450,13 +475,13 @@ normal image placement is set and mobile images are hidden
 	#mobilepage{display:none;}
 
 	#pagetitle{font-size:120%;}
-	#pageinfo{font-size:84%;margin-top:17%;}
-	#pagenumber{font-size:83%;margin-top:150%;}
+	#pageinfo{line-height:1.3;font-size:91%;margin-top:15%;}
+	#pagenumber{font-size:91%;margin-top:152%;}
 }
 
 @media (min-width:1200px) and (any-hover:none) and (orientation:landscape) {
 	#pagetitle{font-size:150%;}
-	#pageinfo{font-size:100%;margin-top:17%;}
+	#pageinfo{font-size:100%;margin-top:15%;}
 	#pagenumber{font-size:100%;margin-top:150%;}
 }
 
@@ -471,12 +496,12 @@ support hover (ex. iPad pro)*/
 	#mobilephotograph{position:relative;width:40%;margin-top:8%;margin-right:-10%;margin-left:18%;}
 	#mobilepaperclip{position:relative;width:10%;left:15%;margin-bottom:20%;margin-right:-15%;}
 	#binderclip{position:relative;width:15%;right:50%;margin-right:20%;margin-top:20%;}
-	#mobilefile{width:90%;margin-top:13%;margin-bottom:15%;margin-right:-55%;}
-	#mobilepage{position:relative;width:55%;right:22%;margin-top:-99%;}
+	#mobilefile{width:90%;margin-top:13%;margin-bottom:15%;margin-right:-64%;}
+	#mobilepage{position:relative;width:64%;right:22%;margin-top:-125%;}
 
-	#mobilepagetitle{font-size:4.5vw;}
-	#mobilepageinfo{font-size:3.2vw;margin-top:18%;}
-	#mobilepagenumber{font-size:3.2vw;margin-top:163%;}
+	#mobilepagetitle{font-size:260%;}
+	#mobilepageinfo{line-height:1.3;font-size:185%;margin-top:18%;}
+	#mobilepagenumber{font-size:185%;margin-top:183%;}
 }
 
 
@@ -576,9 +601,11 @@ reveal other elements, resize them accordingly */
 
 /* large desktops */
 @media (min-width: 1200px) {
-	#note{width:37%;margin-right:8%;margin-bottom:5%;}
-	#contact-title{font-size:2.4vw;top:8%;}
-	#contact-info{font-size:1.7vw;}
+	#pen{width:5.3%;}
+	#note{width:33%;margin-right:8%;margin-bottom:5%;}
+	#contact-title{font-size:2.3vw;top:8%;}
+	#contact-info{font-size:1.6vw;}
+	#iphone{width:38%;}
 }
 
 /* for anything that is larger than a phone and is "touchscreen", 
