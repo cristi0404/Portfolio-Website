@@ -43,7 +43,6 @@
 
 		<div class="container">
 			<div class="row align-items-center justify-content-center">
-				
 				<svg id="file" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1190.1 564">
 					<title id="filetitle">Open Manila folder with a stack of pages inside</title>
 					<style type="text/css">
@@ -223,8 +222,13 @@
 					<p id="mobilepagenumber">1/4</p>
 				</div>
 
+				<audio id="pageturn" controls>
+					<source src="sounds/pages_turning.wav" type="audio/wav">
+				</audio>
+
 			</div>
 		</div>
+
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -234,6 +238,9 @@
 
 	    <script>
 
+	    	var pageturn = document.getElementById('pageturn');
+	    	pageturn.volume = 0.5;
+
 	    	/*event handling for wide screens*/
 	    	var nextarrow = document.getElementById('nextarrow');
 	    	var replayarrow = document.getElementById('replayarrow');
@@ -242,6 +249,7 @@
 	    	var pagetitle = document.getElementById('pagetitle');
 	    	var pageinfo = document.getElementById('pageinfo');
 	    	var pagenumber = document.getElementById('pagenumber');
+
 
 	    	var clickCount = 0;
 
@@ -292,6 +300,8 @@
 	    	}
 
 	    	arrowspace.onclick = function() {
+	    		pageturn.play();
+
 	    		if (clickCount == 0) {
 	    			firstClick();
 	    		}
@@ -369,6 +379,8 @@
 	    	}
 
 	    	marrowspace.onclick = function() {
+	    		pageturn.play();
+
 	    		if (mclickCount == 0) {
 	    			mfirstClick();
 	    		}
@@ -399,6 +411,8 @@
 			file.onmouseout = function() {
 				filetitle.innerHTML = "Open Manila folder with a stack of pages inside";
 			}
+
+
 
 
 	    </script>

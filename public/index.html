@@ -144,6 +144,11 @@
 			</div>
 		</div>
 
+		<audio id="lampswitch" controls>
+			<source src="sounds/lampswitch.wav" type="audio/wav">
+		</audio>
+
+
 		<script>
 			
 			var darklamp = document.getElementById('darklamp');
@@ -152,6 +157,9 @@
 			var bulbshadow = document.getElementById('bulbshadow');
 			var lightbeam = document.getElementById('lightbeam');
 			var outline = document.getElementById('st7');
+
+			var lampswitch = document.getElementById('lampswitch');
+			lampswitch.volume = 0.5;
 
 
 			/*lamp blinking effect*/
@@ -198,6 +206,8 @@
 
 
 			darklamp.onclick = function() {
+				lampswitch.play();
+
 				if (elementClicked == false) {
 					darklampon();
 					elementClicked = true;
@@ -209,7 +219,6 @@
 				}
 
 			}
-
 
 			/*hide svg titles on hover*/
 

@@ -30,6 +30,10 @@ a:hover {
 	color: #2B848B;
 }
 
+audio {
+	visibility: hidden;
+}
+
 
 /*--------------------------*/
 /* NAVBAR */
