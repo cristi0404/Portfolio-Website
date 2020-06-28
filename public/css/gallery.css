@@ -1,0 +1,25 @@
+body {
+	background: #FFF;
+}
+
+.current {
+	color: #29828A;
+}
+
+.navbar-nav > li > .dropdown-menu > a {
+	background-color: #10232D;
+	color:#FFF;
+}
+
+.navbar-nav > li > .dropdown-menu > a:hover,
+.navbar-nav > li > .dropdown-menu > a:focus {
+	background-color: #29828A;
+}
+
+.navbar-nav > li > .dropdown-menu > .currentsub {
+	background-color: #29828A;
+}
+
+.container {
+	margin-top:2.5%;
+}
