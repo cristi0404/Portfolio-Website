@@ -289,7 +289,7 @@ hide elements and resize other elements accordingly*/
 
 	#mobilelaptop{width:63%;margin:8% auto 15% auto;}
 	#mobileipad{width:48%;margin:0% auto 18% auto;}
-	#mobilecanvas{width:58%;margin:0% auto 20% auto;}
+	#mobilecanvas{width:54%;margin:0% auto 20% auto;}
 }
 
 @media (max-width: 575.98px) {
@@ -353,6 +353,16 @@ hide unnecessary elements (for the case of landscape tablets) */
 
 #hrgallery{border-top:2px dashed rgba(0,0,0,.1);}
 
+.next {
+	position:relative;
+	margin:auto 0% auto 0%;
+	text-align:center;
+}
+
+.next a:hover {
+	text-decoration:none !important;
+}
+
 /* GRAPHIC DESIGN PAGE MEDIA QUERIES */
 
 /*for screens with medium width and lower,
@@ -364,32 +374,44 @@ adjust laptop size, hr size, thumnail spacing*/
 }
 
 @media (max-width:575.98px) and (any-hover:none) {
-	#gdlaptop{width:60%;margin-bottom:0%;margin-top:-9.8%;}
+	#gdlaptop{width:60%;margin-bottom:0%;margin-top:-9.8%;margin-right:-15%;}
 	#hrgallery{margin-top:-7%;margin-bottom:12%;}
+	.next{width:15%;left:10%;font-size:300%;margin-bottom:27%}
 }
 
 @media (max-width:575.98px) and (any-hover:hover) {
-	#gdlaptop{width:60%;margin-bottom:5%;margin-top:8%;}
+	#gdlaptop{width:60%;margin-bottom:5%;margin-top:8%;margin-right:-15%;}
 	#hrgallery{margin-bottom:10%;}
+	.next{width:15%;left:10%;font-size:300%;margin-bottom:19%}
 }
 
 @media (min-width:576px) and (any-hover:hover) {
-	#gdlaptop{width:63%;margin-top:8%;}
+	#gdlaptop{width:63%;margin-top:8%;margin-right:-15%;}
 	#hrgallery{margin-top:7%;margin-bottom:9%;}
+	.next{width:15%;left:10%;font-size:300%;margin-bottom:14%}
 }
 
 @media (min-width:576px) and (any-hover:none) {
-	#gdlaptop{width:63%;margin-top:2%;}
+	#gdlaptop{width:63%;margin-top:2%;margin-right:-15%;}
 	#hrgallery{margin-top:7%;margin-bottom:9%;}
+	.next{width:15%;left:10%;font-size:350%;margin-bottom:20%}
 }
 
-@media (min-width:768px) {
-	#gdlaptop{width:63%;margin-top:8%;}
+@media (min-width:768px) and (any-hover:hover) {
+	#gdlaptop{width:63%;margin-top:8%;margin-right:-10%;}
 	#hrgallery{margin-top:7%;margin-bottom:9%;}
+	.next{width:10%;left:7%;font-size:450%;margin-bottom:14%;}
 }
 
-@media (min-width:992px) {
-	#gdlaptop{width:27%;margin-bottom:4%;margin-top:0%;}
+@media (min-width:768px) and (any-hover:none) {
+	#gdlaptop{width:63%;margin-top:8%;margin-right:-10%;}
+	#hrgallery{margin-top:7%;margin-bottom:9%;}
+	.next{width:10%;left:7%;font-size:400%;margin-bottom:15%;}
+}
+
+@media (min-width:992px) and (any-hover:hover) {
+	.next{display:none;}
+	#gdlaptop{width:27%;margin-bottom:4%;margin-top:0%;margin-right:0%;}
 	#hrgallery{width:92%;margin-top:0%;margin-bottom:5%;}
 	.thumb{margin-bottom:8%;}
 }
@@ -398,6 +420,7 @@ adjust laptop size, hr size, thumnail spacing*/
 	#gdlaptop{width:45%;margin-bottom:4%;margin-top:4.8%;}
 	#hrgallery{width:92%;margin-top:0%;margin-bottom:5%;}
 	.thumb{margin-bottom:8%;}
+	.next{width:10%;left:7%;font-size:400%;margin-bottom:14%;}
 }
 
 
