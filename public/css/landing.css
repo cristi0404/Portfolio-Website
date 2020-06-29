@@ -30,7 +30,7 @@ a.nav-link:hover::after {
 }
 
 .container {
-	margin-top:2%;
+	margin-top:2.5%;
 }
 
 /*forces row to center on page*/
@@ -59,15 +59,15 @@ and non-hover devices; active/hover font is blue*/
 /*for large and extra large screens that support hover, 
 change display of navbar*/
 @media (min-width: 992px) and (any-hover:hover) {
-	.navbar-brand{position:absolute;width:35vw;text-align:center;margin:auto;left:0;right:0;margin-top:3%;}
-	.navbar-nav{position:absolute;writing-mode:vertical-lr;right:2%;padding:0;margin-top:16%;z-index:1;}
+	.navbar-brand{position:absolute;width:35vw;text-align:center;margin-left:auto;margin-right:auto;left:0;right:0;margin-top:3%;}
+	.navbar-nav{position:absolute;writing-mode:vertical-lr;right:2%;padding:0;margin-top:18%;z-index:2;}
 	.nav-link{font-size:1.9vw;margin:0.7em 0em !important;color:#0E1C23;}
 	.container{margin-top:6.7%;}
 }
 
 @media (min-width: 1200px) and (any-hover:hover) {
 	.navbar-brand{margin-top:2.5%;}
-	.navbar-nav{margin-top:10%;}
+	.navbar-nav{margin-top:12%;}
 	.container{margin-top:5.9%;}
 }
 

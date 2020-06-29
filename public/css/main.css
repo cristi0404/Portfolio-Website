@@ -160,6 +160,7 @@ support hover, adjust nav sizing*/
 #darklamp {
 	position:relative;
 	width:16%;
+	z-index:1;
 }
 
 .show {
@@ -178,6 +179,17 @@ support hover, adjust nav sizing*/
 	cursor: pointer;
 }
 
+#lightcontainer {
+    position:relative;
+    width:10%;
+}
+
+#lightbeam {
+    position:relative;
+    visibility:hidden;
+    opacity:0.8;
+}
+
 /*lightbeam styling is in lightbeam.css*/
 
 
@@ -188,6 +200,7 @@ hide elements and resize other elements accordingly*/
 @media (max-width: 991.98px) {
 	#darklamp{display:none;}
 	#darkwindow{width:80%;margin-top:8%;margin-bottom:5%;}
+	#lightcontainer{display:none;}
 	#lightbeam{display:none;}
 }
 
@@ -196,9 +209,15 @@ hide elements and resize other elements accordingly*/
 window,lamp, and lightbeam placement is set 
 (negative margin on window allowsfor lamp to overlap it)*/
 @media (min-width: 992px) and (any-hover: hover) {
-	#darkwindow{left:2%;margin-bottom:7%;margin-right:-35%;}
-	#darklamp{margin-top:17%;}
-	#lightbeam{top:4.3%;right:0%;width:0%;border-top:370px solid transparent;border-right:1300px solid #EAD6B5;border-bottom:370px solid transparent;}
+	#darkwindow{left:2%;margin-bottom:11.2%;margin-right:-35%;}
+	#darklamp{margin-top:12.5%;margin-right:-18%;}
+	#lightbeam{border-top:290px solid transparent;border-right:1400px solid #EAD6B5;border-bottom:396px solid transparent;clip-path:inset(0vw 0vw 0vw 13vw);}
+}
+
+@media (min-width: 1200px) and (any-hover: hover) {
+	#darkwindow{left:2%;margin-bottom:15%;margin-right:-35%;}
+	#darklamp{margin-top:9%;margin-right:-18%;}
+	#lightbeam{border-top:20vw solid transparent;border-right:95vw solid #EAD6B5;border-bottom:26vw solid transparent;clip-path:inset(0vw 0vw 0vw 13vw);}
 }
 
 
@@ -206,8 +225,9 @@ window,lamp, and lightbeam placement is set
 hide unnecessary elements and resize accordingly (aka landscape tablets) */
 @media (any-hover: none) and (min-width: 992px) {
 	#darklamp{display:none;}
+	#lightcontainer{display:none;}
 	#lightbeam{display:none;}
-	#darkwindow{width:80%;margin-top:3%;margin-bottom:7%;}
+	#darkwindow{width:44%;margin-top:0%;margin-bottom:7%;margin-left:28%;}
 }
 
 
@@ -446,9 +466,9 @@ hide normal images and set placement for mobile images*/
 @media (max-width:575.98px) {
 
 	#mobilephotograph{margin-left:10%;}
-	#mobilefile{width:95%;margin-right:-63%;}
+	#mobilefile{width:95%;margin-right:-63%;margin-bottom:5%;}
 
-	#mobilepage{width:63%;right:20.5%;margin-top:-123%;}
+	#mobilepage{width:63%;right:20.5%;margin-top:-112%;}
 	#mobilepagetitle{font-size:5.7vw;}
 	#mobilepageinfo{line-height:1.3;font-size:4.3vw;margin-top:18%;}
 	#mobilepagenumber{font-size:4.3vw;margin-top:179%;}
