@@ -23,3 +23,25 @@ body {
 .container {
 	margin-top:2.5%;
 }
+
+
+/*centers images in first row based size of the largest image (canvas)*/
+@media (max-width:575.98px) {
+	.first{min-height:64vw;}
+}
+
+@media (min-width:576px) {
+	.first{min-height:50vw;}
+}
+
+@media (min-width:768px) {
+	.first{min-height:52vw;}
+}
+
+@media (min-width:992px) and (any-hover:none) {
+	.first{min-height:38vw;}
+}
+
+@media (min-width:992px) and (any-hover:hover) {
+	.first{min-height:20vw;}
+}

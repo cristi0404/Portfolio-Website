@@ -14,52 +14,37 @@ a.nav-link::after {
 	color: #29828A;
 }
 
-/*matches with the level of the container on landing page*/
 .container {
 	margin-top: 2.5%;
 }
 
-.row {
-	min-height: 85vh;
+
+/*same row treatment for mobile as gallery pages*/
+@media (max-width:575.98px) {
+	.home{min-height:64vw;}
 }
 
-hr {
-	border-top:2px dashed rgba(0,0,0,.1);
-}
-
-
-@media (max-width:575.98px) and (any-hover:none) {
-	hr{width:81%;margin-top:-3.7%;margin-bottom:10%;}
-}
-
-@media (max-width:575.98px) and (any-hover:hover) {
-	hr{width:83%;margin-top:-6.8%;margin-bottom:7%;}
-}
-
-@media (min-width:576px)and (any-hover:none) {
-	hr{width:83%;margin-top:-2.3%;margin-bottom:12%;}
-}
-
-@media (min-width:576px)and (any-hover:hover) {
-	hr{width:83%;margin-top:-8.3%;margin-bottom:12%;}
+@media (min-width:576px) {
+	.home{min-height:50vw;}
 }
 
 @media (min-width:768px) {
-	hr{width:84%;margin-top:-8.4%;margin-bottom:8%;}
+	.home{min-height:52vw;}
 }
 
-@media (min-width:992px) {
-	hr{width:84%;margin-top:-0.3%;margin-bottom:0%;}
+@media (min-width:992px) and (any-hover:none) {
+	.home{min-height:38vw;}
 }
 
 
+
+
+/*row adjustment for desktop*/
+@media (min-width:992px) and (any-hover:hover) {
+	.row{min-height: 85vh;}
+}
 
 /*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
     .container{max-width: 85vw;}
-}
-
-/*layout adjustments for landscape tablets*/
-@media (any-hover:none) and (min-width:992px) and (orientation:landscape) {
-	.container{margin-top:0%;}
 }

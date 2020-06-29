@@ -30,7 +30,7 @@ a.nav-link:hover::after {
 }
 
 .container {
-	margin-top:2%;
+	margin-top:1.7%;
 }
 
 /*forces row to center on page*/
@@ -41,9 +41,7 @@ a.nav-link:hover::after {
 
 /*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
-    .container{
-        max-width: 85vw;
-    }
+    .container{max-width: 85vw;}
 }
 
 /*font color is creme for devices < large 
