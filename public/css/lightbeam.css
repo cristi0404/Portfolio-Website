@@ -1,70 +1,10 @@
-/*aspect ratio media queries for lightbeam placement*/
-@media (min-aspect-ratio: 1/2) {
-    #lightbeam{top:47.4%;right:63%;width:30vw;height:12.8vw;transform:perspective(8vw) rotateY(154deg);}
+#lightbeam {
+    position:absolute;
+    visibility:hidden;
+    opacity:0.8;
+    clip-path: inset(0% 0% 0% 11%);
 }
-@media (min-aspect-ratio: 135/256) {
-    #lightbeam{top:47.6%;right:58.5%;width:30vw;height:11vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 9/16) {
-    #lightbeam{top:47.5%;right:58.5%;width:30vw;height:10.8vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 1000/1681) {
-    #lightbeam{top:47.2%;right:63.5%;width:30vw;height:12.4vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 3/5) {
-    #lightbeam{top:47.6%;right:59%;width:30vw;height:10.3vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 2/3) {
-    #lightbeam{top:46.6%;right:63%;width:30vw;height:12.8vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 1000/1414) {
-    #lightbeam{top:46.3%;right:63%;width:30vw;height:12.9vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 3/4) {
-    #lightbeam{top:46.8%;right:59%;width:30vw;height:10.6vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 4/5) {
-    #lightbeam{top:47%;right:59.5%;width:30vw;height:9.8vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 5/6) {
-    #lightbeam{top:46.9%;right:59.5%;width:30vw;height:9.8vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 1/1) {
-    #lightbeam{top:46.3%;right:59.5%;width:30vw;height:9.9vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 6/5) {
-    #lightbeam{top:45.5%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 5/4) {
-    #lightbeam{top:45.8%;right:60%;width:30.2vw;height:9.2vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 5/4) and (max-width:1022px) {
-    #lightbeam{top:43.1%;right:63%;width:30.2vw;height:12.8vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 4/3) {
-    #lightbeam{top:43.7%;right:63%;width:30.1vw;height:12vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 1414/1000) {
-    #lightbeam{top:44.4%;right:59%;width:30.1vw;height:10.1vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 3/2) {
-    #lightbeam{top:44.2%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 16/10) {
-    #lightbeam{top:44%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 5/3) {
-    #lightbeam{top:43.6%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 1681/1000) {
-    #lightbeam{top:43.6%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 16/9) {
-    #lightbeam{top:43%;right:59.5%;width:30vw;height:10.1vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 256/135) {
-    #lightbeam{top:42.7%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
-}
-@media (min-aspect-ratio: 2/1) {
-    #lightbeam{top:42.5%;right:59.5%;width:30vw;height:10vw;transform:perspective(8vw) rotateY(154deg);}
+
+@media (min-width: 992px) and (any-hover: hover) {
+    #lightbeam{top:4%;right:0%;width:0%;border-top:370px solid transparent;border-right:1300px solid #EAD6B5;border-bottom:370px solid transparent;}
 }
