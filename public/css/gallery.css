@@ -24,7 +24,6 @@ body {
 	margin-top:2.5%;
 }
 
-
 /*centers images in first row based size of the largest image (canvas)*/
 @media (max-width:575.98px) {
 	.first{min-height:64vw;}

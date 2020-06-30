@@ -186,8 +186,8 @@ support hover, adjust nav sizing*/
 
 #lightbeam {
     position:relative;
-    visibility:hidden;
     opacity:0.8;
+    visibility:hidden;
 }
 
 /*lightbeam styling is in lightbeam.css*/
