@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Graphic Design</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Cristina Villegas" />
+
+        <meta name="description" content="This is the portfolio of Cristina Villegas, a multi-disciplinary artist and graphic designer." />
+        <meta name="keywords" content="Cristina Villegas, digital art, graphic design, visual, illustration, graphic, design, art" />
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/gallery.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
         <link rel="icon" href="favicon.png" type='image/x-icon'/>
         <link rel="apple-touch-icon-precomposed" href="appletouch_icon.png">
     </head>
@@ -68,38 +74,59 @@
 
             <div class="row gallery-block grid-gallery">
                 <div class="col-6 col-lg-4 item">
-                    <a class="lightbox" href="images/image1.jpg" data-caption="Image caption">
+                    <a class="lightbox" href="images/image1.jpg" data-caption="Lorem ipsum">
                         <img class="img-fluid image scale-on-hover" src="images/graphicdesign/thumbs/ghana_thumb.jpg">
+                        <div class="overlay">
+                            <div class="text">Joeva Rock</div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-4 item">
                     <a class="lightbox" href="images/image1.jpg" data-caption="Image caption">
                         <img class="img-fluid image scale-on-hover" src="images/graphicdesign/thumbs/teachcamp_thumb.jpg">
+                        <div class="overlay">
+                            <div class="text">NYU Steinhardt Teach Camp</div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-4 item">
                     <a class="lightbox" href="images/image1.jpg" data-caption="Image caption">
                         <img class="img-fluid image scale-on-hover" src="images/graphicdesign/thumbs/academictools_thumb.jpg">
+                        <div class="overlay">
+                            <div class="text">Academic Tool Risk Mitigation</div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-4 item">
                     <a class="lightbox" href="images/image1.jpg" data-caption="Image caption">
                         <img class="img-fluid image scale-on-hover" src="images/graphicdesign/thumbs/varanida_thumb.jpg">
+                        <div class="overlay">
+                            <div class="text">Varanida</div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-4 item">
                     <a class="lightbox" href="images/image1.jpg" data-caption="Image caption">
                         <img class="img-fluid image scale-on-hover" src="images/graphicdesign/thumbs/carpedatum_thumb.jpg">
+                        <div class="overlay">
+                            <div class="text">Carpe Datum</div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-4 item">
                     <a class="lightbox" href="images/image1.jpg" data-caption="Image caption">
                         <img class="img-fluid image scale-on-hover" src="images/graphicdesign/thumbs/businesscard_thumb.jpg">
+                        <div class="overlay">
+                            <div class="text">Bilingual Business Card</div>
+                        </div>
                     </a>
                 </div>
                 <div class="col-6 col-lg-4 item">
                     <a class="lightbox" href="images/image1.jpg" data-caption="Image caption">
                         <img class="img-fluid image scale-on-hover" src="images/graphicdesign/thumbs/phoenix_thumb.jpg">
+                        <div class="overlay">
+                            <div class="text">Train the Trainer</div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -111,12 +138,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 
-        <!--Baguettebox scripts-->    
+        <!--Baguettebox/gallery scripts-->    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js" asynch></script>
         <script>
+            var body = document.getElementsByTagName("BODY")[0];
+
             baguetteBox.run('.grid-gallery', { 
-                animation: 'slideIn'
+                animation: 'slideIn',
+                afterShow: function() {
+                    body.style.overflow = 'hidden';
+                },
+                afterHide: function() {
+                    body.style.overflow = 'visible';
+                }
             });
+
+
         </script>
     </body>
 </html>

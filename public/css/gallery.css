@@ -25,15 +25,86 @@ body {
 }
 
 
+/*thumbnail overlay effects styling*/
+.item {
+	position:relative;
+}
+
+.overlay {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin:0 auto;
+    width: 92.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(41, 130, 138,0.8);
+}
+
+.item:hover .overlay {
+	opacity:1;
+}
+
+.item:hover .text {
+	opacity:1;
+	-moz-transform: scale(1) translate(-50%, -50%);
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    -ms-transform: scale(1) translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+
+    -moz-transform: scale(1.2) translate(-50%, -50%);
+    -webkit-transform: scale(1.2) translate(-50%, -50%);
+    -ms-transform: scale(1.2) translate(-50%, -50%);
+    transform: scale(1.2) translate(-50%, -50%);
+
+    transform-origin: left top;
+    transition: all .5s ease;
+    text-align: center;
+	color:#fff;
+	opacity:0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size:30px;
+}
+
+/*overlay media queries*/
+@media (max-width:1199.98px) {
+	.overlay{width:90.5%}
+	.text{font-size:25px;}
+}
+
+@media (max-width:991.98px) {
+	.overlay{width:92%}
+	.text{font-size:30px;}
+}
+
+@media (max-width:767.98px) {
+	.overlay{width:89%}
+	.text{font-size:23px;}
+}
+
+@media (max-width:575.98px) {
+	.overlay{width:89%}
+}
 
 
 /*Baguettebox template css*/
 .gallery-block.grid-gallery{
-  padding-bottom: 60px;
+  padding-bottom: 7%;
 }
 
-.gallery-block.grid-gallery a:hover{
- opacity:0.8;
+.gallery-block.grid-gallery a:hover img{
+  opacity:0.4;
 }
 
 .gallery-block.grid-gallery .item img{
