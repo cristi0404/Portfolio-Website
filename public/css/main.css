@@ -338,15 +338,16 @@ hide unnecessary elements (for the case of landscape tablets) */
 	text-decoration:none !important;
 }
 
-.hrgallery{margin-top:5%;margin-bottom:10%;}
+.hrgallery{margin-top:5%;margin-bottom:10%;width:100%;}
+
+.img-fluid {
+	background-color:#29828A;
+}
 
 /* GALLERY PAGES MEDIA QUERIES */
 
 /*for screens with medium width and lower,
-adjust image size, hr spacing, thumbnail spacing*/
-@media (max-width:991.98px) {
-	.thumb{margin-bottom:12%;}
-}
+adjust top image size and hr spacing*/
 
 @media (max-width:575.98px) {
 	#gallerylaptop{width:60%;}
@@ -390,8 +391,7 @@ adjust image size, hr spacing, thumbnail spacing*/
 	#galleryipad{width:20%;}
 	#gallerycanvas{width:16%;}
 
-	.hrgallery{width:92%;margin-top:3%;margin-bottom:5%;}
-	.thumb{margin-bottom:8%;}
+	.hrgallery{margin-top:3%;margin-bottom:5%;}
 
 	.next{display:none;}
 	.prev{display:none;}
@@ -402,8 +402,7 @@ adjust image size, hr spacing, thumbnail spacing*/
 	#galleryipad{width:28%;}
 	#gallerycanvas{width:26%;}
 
-	.hrgallery{width:92%;margin-top:5%;margin-bottom:5%;}
-	.thumb{margin-bottom:8%;}
+	.hrgallery{margin-top:5%;margin-bottom:5%;}
 
 	.next{right:23%;}
 	.prev{left:23%;}
