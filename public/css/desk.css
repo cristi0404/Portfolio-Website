@@ -8,10 +8,6 @@ body {
 	color: #FFF9DD;
 }
 
-a.nav-link::after {
-	background: #FFF9DD;
-}
-
 .current {
 	color: #FFF9DD;
 }

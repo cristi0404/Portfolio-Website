@@ -1,10 +1,10 @@
 /*color palette
 landing background: #0E1C23
 landing links desktop: #0E1C23; landing links desktop hover: #FFF9DD; landing links mobile: #FFF9DD; landing links mobile active: #5EA3A0;
-home background: #EDE0C1
+home background: #f5e5cb
 home links: #10232D
 home links hover/active: #29828A
-desk background: #AE875A
+desk background: #ad8351
 desk links: #10232D
 desk links hover/active: #FFF9DD;
 */
@@ -66,7 +66,7 @@ hr {
 }
 
 .navbar-nav > li > .dropdown-menu {
-	background-color: #FAF8F2;
+	background-color: #10232D;
 	border-radius: 0px;
 	border: none;
 	padding: 0px;
@@ -78,12 +78,13 @@ hr {
 
 .navbar-nav > li > .dropdown-menu > a {
 	padding: 0.5rem 1.5rem;
+	color:#FFF9DD;
 }
 
 
 .navbar-nav > li > .dropdown-menu > a:hover,
 .navbar-nav > li > .dropdown-menu > a:focus {
-	background-color: #10232D;
+	background-color: #29828A;
 	color: #FAF8F2;
 }
 
@@ -339,10 +340,6 @@ hide unnecessary elements (for the case of landscape tablets) */
 }
 
 .hrgallery{margin-top:5%;margin-bottom:10%;width:100%;}
-
-.img-fluid {
-	background-color:#29828A;
-}
 
 /* GALLERY PAGES MEDIA QUERIES */
 
