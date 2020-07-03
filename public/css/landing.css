@@ -67,7 +67,7 @@ change display of navbar*/
 
 @media (min-width: 1200px) and (any-hover:hover) {
 	.navbar-brand{margin-top:2.5%;}
-	.navbar-nav{margin-top:12%;}
+	.navbar-nav{margin-top:13%;}
 	.container{margin-top:5.9%;}
 }
 
