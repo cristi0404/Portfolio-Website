@@ -1,5 +1,5 @@
 body {
-	background: #EDE0C1;
+	background: #f5e5cb;
 }
 
 .nav-link:hover {
@@ -14,21 +14,36 @@ a.nav-link::after {
 	color: #29828A;
 }
 
-/*matches with the level of the container on landing page*/
 .container {
 	margin-top: 2.5%;
 }
 
-.row {
-	min-height: 85vh;
+
+/*same row treatment for mobile as gallery pages*/
+@media (max-width:575.98px) {
+	.home{min-height:64vw;}
+}
+
+@media (min-width:576px) {
+	.home{min-height:50vw;}
+}
+
+@media (min-width:768px) {
+	.home{min-height:52vw;}
+}
+
+@media (min-width:992px) and (any-hover:none) {
+	.home{min-height:38vw;}
+}
+
+
+
+/*row adjustment for desktop*/
+@media (min-width:992px) and (any-hover:hover) {
+	.row{min-height:85vh;}
 }
 
 /*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
     .container{max-width: 85vw;}
-}
-
-/*layout adjustments for landscape tablets*/
-@media (any-hover:none) and (min-width:992px) and (orientation:landscape) {
-	.container{margin-top:0%;}
 }

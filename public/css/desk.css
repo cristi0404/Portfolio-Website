@@ -1,5 +1,5 @@
 body {
-	background: #AF875A;
+	background: #ad8351;
 	background-image: url(../graphics/woodgrain.svg);
 	background-size: 100vw;
 }
@@ -8,16 +8,12 @@ body {
 	color: #FFF9DD;
 }
 
-a.nav-link::after {
-	background: #FFF9DD;
-}
-
 .current {
 	color: #FFF9DD;
 }
 
 .container {
-	margin-top: 2%;
+	margin-top: 2.5%;
 }
 
 .row {

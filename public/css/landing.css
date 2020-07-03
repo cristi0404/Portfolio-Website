@@ -30,7 +30,7 @@ a.nav-link:hover::after {
 }
 
 .container {
-	margin-top:2%;
+	margin-top:2.5%;
 }
 
 /*forces row to center on page*/
@@ -41,9 +41,7 @@ a.nav-link:hover::after {
 
 /*layout and sizing adjustments for HD screens*/
 @media (min-width: 1200px) {
-    .container{
-        max-width: 85vw;
-    }
+    .container{max-width: 85vw;}
 }
 
 /*font color is creme for devices < large 
@@ -53,24 +51,23 @@ and non-hover devices; active/hover font is blue*/
 	a:hover{color:#5EA3A0;}
 }
 
-/*for xs to medium screens, hide vertical nav
-and adjust row height*/
+/*for xs to medium screens adjust row height*/
 @media (max-width: 991.98px) {
-	.verticalnav{display:none;}
-	div.landing{display:none;}
 	.row{min-height:70vh;}
 }
 
 /*for large and extra large screens that support hover, 
-hide bootstrap navbar and make container display as block*/
-@media (min-width: 992px) and (any-hover: hover) {
-	.navbar{display:none;}
+change display of navbar*/
+@media (min-width: 992px) and (any-hover:hover) {
+	.navbar-brand{position:absolute;width:35vw;text-align:center;margin-left:auto;margin-right:auto;left:0;right:0;margin-top:3%;}
+	.navbar-nav{position:absolute;writing-mode:vertical-lr;right:2%;padding:0;margin-top:18%;z-index:2;}
+	.nav-link{font-size:1.9vw;margin:0.7em 0em !important;color:#0E1C23;}
+	.container{margin-top:6.7%;}
 }
 
-/*for any screen that doesn't support hover, hide verticalnav 
-and resize bootstrap navbar accordingly*/
-@media (any-hover: none) {
-	.verticalnav{display:none;}
-	div.landing{display:none;}
+@media (min-width: 1200px) and (any-hover:hover) {
+	.navbar-brand{margin-top:2.5%;}
+	.navbar-nav{margin-top:13%;}
+	.container{margin-top:5.9%;}
 }
 
