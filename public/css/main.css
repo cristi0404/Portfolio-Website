@@ -6,14 +6,16 @@ home links: #10232D
 home links hover/active: #29828A
 desk background: #ad8351
 desk links: #10232D
-desk links hover/active: #FFF9DD;
+desk links hover/active: #FFF9DD
+dropdown menu background: #10232D; hover background: #29828A
+dropdown menu links: #FAF8F2
 */
 
 
-/*class for debugging*/
+/*class for debugging
 .debug {
 	border: 2px solid black;
-}
+}*/
 
 
 body {
@@ -31,12 +33,16 @@ a:hover {
 }
 
 audio {
-	visibility: hidden;
+	display:none;
 }
 
 hr {
 	border-top:2px dashed rgba(0,0,0,.1);
-	width:88%;
+	width:100%;
+}
+
+@media (any-hover:none) {
+	audio{display:none;}
 }
 
 
@@ -78,14 +84,13 @@ hr {
 
 .navbar-nav > li > .dropdown-menu > a {
 	padding: 0.5rem 1.5rem;
-	color:#FFF9DD;
+	color:#FAF8F2;
 }
 
 
 .navbar-nav > li > .dropdown-menu > a:hover,
 .navbar-nav > li > .dropdown-menu > a:focus {
 	background-color: #29828A;
-	color: #FAF8F2;
 }
 
 /* NAVBAR MEDIA QUERIES */
@@ -135,7 +140,8 @@ support hover, adjust nav sizing*/
 	.dropdown-item{font-size:1.2vw;}
 }
 
-/*for large and xl sized screens, add padding to logo*/
+/*for large and xl sized screens, add padding to logo
+to match right padding on menu*/
 @media (min-width:992px) {
 	.navbar-brand{padding-left:.5rem;}
 }
@@ -405,6 +411,7 @@ adjust top image size and hr spacing*/
 	.prev{left:23%;}
 }
 
+/*gallery styling is in gallery.css*/
 
 
 /*--------------------------*/

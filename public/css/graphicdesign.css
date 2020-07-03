@@ -1,31 +1,34 @@
-figure > img {
-	vertical-align: top !important;
+figure>img {
+	max-width:85% !important;
+	max-height:85% !important;
+	margin-bottom:10%;
 }
 
 /*media queries for baguetteBox overrides*/
 @media (max-width:575.98px) and (any-hover:none) {
-	figure>img{max-width:85% !important;max-height:85% !important;margin-top: 3vh;}
-	figcaption{font-size:80%;padding:0% 5% 3% 5%;}
+	figcaption{font-size:80%;}
 }
 
 @media (max-width:575.98px) and (any-hover:hover) {
-	figure>img{max-width:85% !important;max-height:85% !important;margin-top: 3vh;}
-	figcaption{font-size:100%;padding:0% 5% 3% 5%;}
+	figcaption{font-size:90%;}
 }
 
-@media (min-width:576px) {
-	figure>img{max-width:75% !important;max-height:75% !important;margin-top: 4vh;}
-	figcaption{font-size:100%;padding:0% 7% 1% 7%;}
+@media (min-width:576px) and (any-hover:none) {
+	figcaption{font-size:90%;line-height:1.3 !important;}
+}
+
+@media (min-width:576px) and (any-hover:hover) {
+	figcaption{font-size:90%;}
 }
 
 @media (min-width:768px) {
-	figcaption{font-size:110%;padding:0% 7% 5% 7%;}
+	figcaption{font-size:100%;line-height:1.8 !important;}
 }
 
 @media (min-width:992px) {
-	figcaption{font-size:110%;padding:0% 7% 2% 7%;}
+	figure>img{margin-bottom:5%;}
 }
 
 @media (min-width:1200px) {
-	figure>img{max-width:80% !important;max-height:80% !important;}
+	figcaption{font-size:110%;}
 }
