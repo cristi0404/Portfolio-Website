@@ -12,10 +12,10 @@ dropdown menu links: #FAF8F2
 */
 
 
-/*class for debugging
+/*class for debugging*/
 .debug {
 	border: 2px solid black;
-}*/
+}
 
 
 body {
@@ -39,10 +39,6 @@ audio {
 hr {
 	border-top:2px dashed rgba(0,0,0,.1);
 	width:100%;
-}
-
-@media (any-hover:none) {
-	audio{display:none;}
 }
 
 
@@ -189,6 +185,7 @@ to match right padding on menu*/
 #lightcontainer {
     position:relative;
     width:10%;
+
 }
 
 #lightbeam {
