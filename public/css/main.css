@@ -575,6 +575,14 @@ support hover (ex. iPad pro)*/
 }
 
 
+/*adjustment for wide viewports (ar > 1.896)*/
+@media (min-aspect-ratio:256/135) {
+	#pagetitle{font-size:1.7vw;}
+	#pageinfo{line-height:1.3;font-size:1.23vw;margin-top:15%;}
+	#pagenumber{font-size:1.28vw;margin-top:150%;}
+}
+
+
 
 /*--------------------------*/
 /* CONTACT PAGE */
