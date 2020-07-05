@@ -47,3 +47,8 @@ a.nav-link::after {
 @media (min-width: 1200px) {
     .container{max-width: 85vw;}
 }
+
+/*adjustment for wide viewports (ar > 1.896)*/
+@media (min-aspect-ratio:256/135) {
+	.container{max-width:73vw;}
+}

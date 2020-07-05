@@ -44,6 +44,7 @@ a.nav-link:hover::after {
     .container{max-width: 85vw;}
 }
 
+
 /*font color is creme for devices < large 
 and non-hover devices; active/hover font is blue*/
 @media (max-width: 991.98px), (any-hover: none) {
@@ -72,6 +73,15 @@ change display of navbar*/
 }
 
 
+
+/*adjustment for wide viewports (ar > 1.896)*/
+@media (min-aspect-ratio:256/135) {
+	.container{max-width:73vw;}
+	.navbar-nav{margin-top:10%;}
+}
+
+
+
 /*Firefox navbar positioning workaround*/
 @-moz-document url-prefix() { 
 	@media (max-width:921.98px) and (any-hover:hover) {
@@ -82,13 +92,17 @@ change display of navbar*/
 
 	@media (min-width:922px) and (any-hover:hover) {
 		.navbar-nav {
-		     margin-top: 80%;
+		     margin-top: 77%;
 		  }
 	}
 
 	@media (min-width:1200px) and (any-hover:hover) {
 		.navbar-nav {
-		     margin-top: 60%;
+		     margin-top: 65%;
 		  }
 	}
+
+	@media (min-aspect-ratio:2/1) {
+	.navbar-nav{margin-top:55%;}
+}
 }

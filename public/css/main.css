@@ -224,6 +224,14 @@ window,lamp, and lightbeam placement is set
 	#light{margin-top:-4%;left:25%;margin-bottom:-4.5%;}
 }
 
+/*adjustments for wide viewports (ar > 1.896)*/
+@media (min-aspect-ratio: 256/135) {
+	#light{width:105.5%;}
+	#darkwindow{left:2%;margin-bottom:7%;margin-right:-35%;}
+	#darklamp{margin-top:17%;margin-right:-40%;}
+	#light{margin-top:-3.5%;left:35.2%;margin-bottom:-4.5%;}
+}
+
 
 /* for anything that is larger than phone & tablet and does not support hover, 
 hide unnecessary elements and resize accordingly (aka landscape tablets) */
@@ -558,6 +566,14 @@ support hover (ex. iPad pro)*/
 }
 
 
+/*adjustment for wide viewports (ar > 1.896)*/
+@media (min-aspect-ratio:256/135) {
+	#pagetitle{font-size:1.7vw;}
+	#pageinfo{line-height:1.3;font-size:1.23vw;margin-top:15%;}
+	#pagenumber{font-size:1.28vw;margin-top:150%;}
+}
+
+
 
 /*--------------------------*/
 /* CONTACT PAGE */
@@ -690,4 +706,11 @@ support hover, adjust layout and sizing (ex. iPad pro)*/
 	#contact-title{font-size:4vw;top:8%;}
 	#contact-info{font-size:3vw;}
 	#bcpen{display:block;width:60vw;}
+}
+
+
+/*adjustment for wide viewports (ar > 1.896)*/
+@media (min-aspect-ratio:256/135) {
+	#contact-title{font-size:2vw;top:8%;}
+	#contact-info{font-size:1.4vw;}
 }
