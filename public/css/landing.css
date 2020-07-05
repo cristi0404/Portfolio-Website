@@ -71,3 +71,24 @@ change display of navbar*/
 	.container{margin-top:5.9%;}
 }
 
+
+/*Firefox navbar positioning workaround*/
+@-moz-document url-prefix() { 
+	@media (max-width:921.98px) and (any-hover:hover) {
+		.navbar-nav {
+		     margin-top: 0%;
+		  }
+	}
+
+	@media (min-width:922px) and (any-hover:hover) {
+		.navbar-nav {
+		     margin-top: 80%;
+		  }
+	}
+
+	@media (min-width:1200px) and (any-hover:hover) {
+		.navbar-nav {
+		     margin-top: 60%;
+		  }
+	}
+}
