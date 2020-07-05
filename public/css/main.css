@@ -609,6 +609,10 @@ support hover (ex. iPad pro)*/
 	width:42%;
 }
 
+.app:hover .st11 {
+	fill: #1d6269;
+}
+
 #bcpen {
 	display: none;
 }
@@ -666,6 +670,7 @@ reveal other elements, resize them accordingly */
 	#contact-title{font-size:180%;top:8%;}
 	#contact-info{font-size:123%;}
 	#bcpen{display:none;}
+
 }
 
 /* large desktops */
