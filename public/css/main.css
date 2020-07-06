@@ -248,6 +248,10 @@ hide unnecessary elements and resize accordingly (aka landscape tablets) */
 
 .hrhome{margin-top:5%;margin-bottom:5%;}
 
+#window {
+	cursor: pointer;
+}
+
 /* HOME PAGE MEDIA QUERIES */
 
 /*for screens with medium width and lower,

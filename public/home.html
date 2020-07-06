@@ -343,6 +343,10 @@
 			</div>	
 		</div>
 
+		<audio id="ambience" controls>
+			<source src="sounds/ambience.mp3" type="audio/mp3">
+		</audio>
+
 		<script>
 
 			/*hide svg titles on hover*/
@@ -375,6 +379,46 @@
 			canvas.onmouseout = function() {
 				canvastitle.innerHTML = "Canvas on easle that links to art portfolio";
 			}
+
+
+			/*open window event handling*/
+			var windowframe = document.getElementById("window");
+			var ambience = document.getElementById('ambience');
+
+			function playSound() {
+				ambience.currentTime = 0;
+				ambience.play();
+			}
+			function stopSound() {
+				ambience.pause();
+			}
+
+			function open() {
+				windowframe.src = "graphics/openwindow.svg";
+				playSound();
+			}
+			function close() {
+				windowframe.src = "graphics/window.svg";
+				stopSound();
+			}
+			
+
+			var clicked = false;
+
+			windowframe.onclick = function() {
+				if (clicked === false) {
+					open();
+					clicked = true;
+				}
+
+				else if (clicked === true) {
+					close();
+					clicked = false;
+				}
+			}
+
+
+
 
 		</script>
 
