@@ -11,7 +11,7 @@ This is the code for my portfolio website, where I showcase my graphic design wo
 
 ## Requirements
 
-This website uses [Bootstrap 4](https://getbootstrap.com/) ass the CSS framework across all pages, and [baguetteBox.js](https://github.com/feimosi/baguetteBox.js) on the gallery pages. It requires the inclusion of jquery (through CDN) to support the Bootstrap dropdown menu. It uses [Cloudflare](https://www.cloudflare.com/) as its DNS, [AWS S3](https://aws.amazon.com/s3/) for hosting, and the domain name was purchased through [Namecheap](https://www.namecheap.com/).
+This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework across all pages, and [baguetteBox.js](https://github.com/feimosi/baguetteBox.js) on the gallery pages. It requires the inclusion of jquery (through CDN) to support the Bootstrap dropdown menu. It uses [Cloudflare](https://www.cloudflare.com/) as its DNS, [AWS S3](https://aws.amazon.com/s3/) for hosting, and the domain name was purchased through [Namecheap](https://www.namecheap.com/).
 
 ## Project Notes
 
