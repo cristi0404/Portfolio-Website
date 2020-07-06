@@ -442,7 +442,6 @@ adjust top image size and hr spacing*/
 	position: absolute;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	width:100%;
 }
 
 .quote {
@@ -453,7 +452,6 @@ adjust top image size and hr spacing*/
 #nextarrowspace, #prevarrowspace, 
 #mnextarrowspace, #mprevarrowspace {
 	cursor: pointer;
-	z-index:5;
 }
 
 
@@ -482,7 +480,7 @@ hide normal images and set placement for mobile images*/
 	#mobilepage{width:63%;right:20.5%;margin-top:-112%;}
 	#mobilepagetitle{font-size:5.7vw;}
 	#mobilepageinfo{line-height:1.3;font-size:4.3vw;margin-top:18%;}
-	#mobilepagenumber{font-size:4.3vw;margin-top:179%;text-align:center;}
+	#mobilepagenumber{font-size:4.3vw;margin-top:179%;margin-left:43%;}
 }
 
 @media (min-width:576px) {
@@ -496,7 +494,7 @@ hide normal images and set placement for mobile images*/
 	#mobilepage{margin-top:-125%;}
 	#mobilepagetitle{font-size:260%;}
 	#mobilepageinfo{line-height:1.3;font-size:185%;margin-top:18%;}
-	#mobilepagenumber{font-size:185%;margin-top:184%;text-align:center;}
+	#mobilepagenumber{font-size:185%;margin-top:184%;margin-left:43%;}
 }
 
 /*for large & xl screens that support hover,
@@ -516,13 +514,13 @@ normal image placement is set and mobile images are hidden
 
 	#pagetitle{font-size:120%;}
 	#pageinfo{line-height:1.4;font-size:92.5%;margin-top:15%;}
-	#pagenumber{font-size:92.5%;margin-top:152%;text-align:center;}
+	#pagenumber{font-size:92.5%;margin-top:152%;margin-left:43%;}
 }
 
 @media (min-width:1200px) and (any-hover:hover) {
 	#pagetitle{font-size:1.9vw;}
 	#pageinfo{line-height:1.4;font-size:1.35vw;margin-top:15%;}
-	#pagenumber{font-size:1.4vw;margin-top:152%;text-align:center;}
+	#pagenumber{font-size:1.4vw;margin-top:152%;margin-left:43%;}
 }
 
 /*landscape tablets*/
@@ -540,13 +538,13 @@ normal image placement is set and mobile images are hidden
 
 	#pagetitle{font-size:120%;}
 	#pageinfo{line-height:1.3;font-size:91%;margin-top:15%;}
-	#pagenumber{font-size:91%;margin-top:152%;text-align:center;}
+	#pagenumber{font-size:91%;margin-top:152%;margin-left:43%;}
 }
 
 @media (min-width:1200px) and (any-hover:none) and (orientation:landscape) {
 	#pagetitle{font-size:150%;}
 	#pageinfo{font-size:100%;margin-top:15%;}
-	#pagenumber{font-size:100%;margin-top:150%;text-align:center;}
+	#pagenumber{font-size:100%;margin-top:150%;margin-left:43%;}
 }
 
 /*for large and xl sized screens in portrait view that don't
@@ -565,7 +563,7 @@ support hover (ex. iPad pro)*/
 
 	#mobilepagetitle{font-size:260%;}
 	#mobilepageinfo{line-height:1.3;font-size:185%;margin-top:18%;}
-	#mobilepagenumber{font-size:185%;margin-top:183%;text-align:center;}
+	#mobilepagenumber{font-size:185%;margin-top:183%;margin-left:43%;}
 }
 
 
@@ -573,7 +571,7 @@ support hover (ex. iPad pro)*/
 @media (min-aspect-ratio:256/135) {
 	#pagetitle{font-size:1.7vw;}
 	#pageinfo{line-height:1.3;font-size:1.23vw;margin-top:15%;}
-	#pagenumber{font-size:1.28vw;margin-top:150%;text-align:center;}
+	#pagenumber{font-size:1.28vw;margin-top:150%;margin-left:43%;}
 }
 
 
