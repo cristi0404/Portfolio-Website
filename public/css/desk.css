@@ -25,6 +25,11 @@ body {
     .container{max-width:90vw;}
 }
 
+/*adjustment for wide viewports (ar > 1.896)*/
+@media (min-aspect-ratio:256/135) {
+	.container{max-width:78vw;}
+}
+
 /*layout adjustment for landscape tablets*/
 @media (any-hover:none) and (min-width:992px) and (orientation:landscape) {
 	.row{min-height:75vh;}
