@@ -19,7 +19,7 @@ This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework 
 - I chose baguetteBox.js because its lightweight and written in pure Javascript (easy to understand/work with)
 - The level of interactivity is different between desktops and touch screen devices (the latter is simplified to eliminate guesswork, especially since hover is not supported).
 - This website is static/has no back-end whatsoever.
-- the "graphics" folder contains the SVGs and the "images" folder contains the portfolio pieces.
+- The "graphics" folder contains the SVGs and the "images" folder contains the portfolio pieces.
 
 ## Design Notes
 
@@ -41,15 +41,15 @@ This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework 
 
 - The rows on most of the pages have a min-height in order to visually center the contents and have them fit the whole page
 
-- The landing and home page have similar row layouts and positioning for the window and lamp to match up. The main difference is landing is set to justify-content-start instead of center for large/xl screens (this only changes the left/right positioning), and align-items-start on xs-medium screens (to avoid the mismatch of vertically centering content across diferent devices)
+- The landing and home page have similar row layouts and positioning for the window and lamp to match up. The main difference is landing is set to justify-content-start instead of center for large/xl screens (this only changes the left/right positioning), and align-items-start on xs-medium screens (to avoid the mismatch of vertically centering the window across different devices)
 
 - The SVGs on most of the pages are positioned relatively using negative margins in order to place them where I want them to go while maintining their relationships to each other as the screen size changes (the only exception is contact page where the SVGs are organized in their regular order, left to right)
 
 - The only part of the website that follows the conventional bootstrap layout with rows and columns are the gallery pages
 
-- sizing for breakpoints below 576px and above 1200px rely on vw and vh
+- Sizing for breakpoints below 576px and above 1200px rely on vw and vh
 
-- most text on the website is positioned absolutely within its containing SVG
+- Most text on the website is positioned absolutely within its containing SVG
 
 
 ### SVGs
@@ -62,7 +62,7 @@ This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework 
 ### CSS Organization
 
 - All pages have their own css stylesheets in addition to the main one in order to customize the background color, navbar styling, container and row width/height.
-- the graphic design page has its own stylsheet in addition to main.css and gallery.css in order to customize the caption formatting
+- The graphic design page has its own stylsheet in addition to main.css and gallery.css in order to customize the caption formatting
 - The main css file is organized as follows: 
   - color palette
   - global body, link, audio, and hr styles
@@ -73,7 +73,7 @@ This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework 
 
 ## Future Updates
 
-- copyright the website
+- Copyright the website
 
 ### Gallery Pages
 
@@ -88,7 +88,7 @@ This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework 
 
 ### Graphics
 
--improve on the graphics as I get better at flat-design illustration
+- Improve on the graphics as I get better at flat-design illustration
 
 
 ## Local Development
