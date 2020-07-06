@@ -347,6 +347,10 @@
 			<source src="sounds/ambience.mp3" type="audio/mp3">
 		</audio>
 
+		<audio id="windowsound" controls>
+			<source src="sounds/window.mp3" type="audio/mp3">
+		</audio>
+
 		<script>
 
 			/*hide svg titles on hover*/
@@ -384,6 +388,7 @@
 			/*open window event handling*/
 			var windowframe = document.getElementById("window");
 			var ambience = document.getElementById('ambience');
+			var windowsound = document.getElementById('windowsound');
 
 			function playSound() {
 				ambience.currentTime = 0;
@@ -408,11 +413,15 @@
 			windowframe.onclick = function() {
 				if (clicked === false) {
 					open();
+					windowsound.currentTime = 0;
+					windowsound.play();
 					clicked = true;
 				}
 
 				else if (clicked === true) {
 					close();
+					windowsound.currentTime = 0;
+					windowsound.play();
 					clicked = false;
 				}
 			}
