@@ -563,7 +563,7 @@ support hover (ex. iPad pro)*/
 
 
 /*adjustment for wide viewports (ar > 1.896)*/
-@media (min-aspect-ratio:256/135) {
+@media (min-aspect-ratio:256/135) and (min-width:992px) {
 	#pagetitle{font-size:1.7vw;}
 	#pageinfo{line-height:1.3;font-size:1.23vw;margin-top:15%;}
 	#pagenumber{font-size:1.28vw;margin-top:150%;margin-left:43%;}
@@ -586,7 +586,7 @@ support hover (ex. iPad pro)*/
 
 #contact-title {
 	position: absolute; 
-	left: 10%; 
+	left: 10%;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 }
@@ -594,7 +594,7 @@ support hover (ex. iPad pro)*/
 #contact-info {
 	position: absolute; 
 	left: 10%; 
-	top: 27%; 
+	top: 25%; 
 	right: 15%;
 	line-height: 1.2;
 	font-family: 'Roboto', sans-serif;
@@ -641,16 +641,16 @@ reveal other elements, resize them accordingly */
 /*portrait phones*/
 @media (max-width: 575.98px) {
 	#note{width:77%;}
-	#contact-title{font-size:5.8vw;top:8%;}
-	#contact-info{font-size:4.2vw;}
+	#contact-title{font-size:5.3vw;top:9%;}
+	#contact-info{font-size:3.6vw;}
 	#bcpen{width:95vw;}
 }
 
 /*landscape phones*/
 @media (min-width: 576px) {
 	#note{width:75%;}
-	#contact-title{font-size:210%;top:8%;}
-	#contact-info{font-size:140%;}
+	#contact-title{font-size:190%;top:9%;}
+	#contact-info{font-size:125%;}
 }
 
 /*tablets*/
@@ -663,8 +663,8 @@ reveal other elements, resize them accordingly */
 /* desktops */
 @media (min-width: 992px) {
 	#note{width:37%;margin-right:8%;margin-bottom:5%;}
-	#contact-title{font-size:180%;top:8%;}
-	#contact-info{font-size:123%;}
+	#contact-title{font-size:165%;top:9%;}
+	#contact-info{font-size:105%;}
 	#bcpen{display:none;}
 
 }
@@ -673,8 +673,8 @@ reveal other elements, resize them accordingly */
 @media (min-width: 1200px) {
 	#pen{width:5.3%;}
 	#note{width:33%;margin-right:8%;margin-bottom:5%;}
-	#contact-title{font-size:2.3vw;top:8%;}
-	#contact-info{font-size:1.6vw;}
+	#contact-title{font-size:2.1vw;top:9%;}
+	#contact-info{font-size:1.4vw;}
 	#iphone{width:38%;}
 }
 
@@ -711,7 +711,7 @@ support hover, adjust layout and sizing (ex. iPad pro)*/
 
 
 /*adjustment for wide viewports (ar > 1.896)*/
-@media (min-aspect-ratio:256/135) {
+@media (min-aspect-ratio:256/135) and (min-width:992px) {
 	#contact-title{font-size:2vw;top:8%;}
 	#contact-info{font-size:1.4vw;}
 }
