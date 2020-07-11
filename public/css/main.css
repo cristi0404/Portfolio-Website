@@ -72,7 +72,10 @@ hr {
 	border-radius: 0px;
 	border: none;
 	padding: 0px;
+	margin-top:0px;
 }
+
+#navbarDropdown {}
 
 .dropdown-item:first-child, .dropdown-item:last-child {
 	border-radius: 0rem;
@@ -94,7 +97,7 @@ hr {
 and resize navbar accordingly */
 
 @media (max-width: 991.98px) {
-	li.dropdown{display:none;}
+	.dropdown-home{display:none;}
 }
 
 /* phones (portrait & landscape) */
@@ -111,6 +114,11 @@ and resize navbar accordingly */
 	.nav-link{font-size:4.8vw;}
 }
 
+/* large desktop screens */
+@media (min-width: 992px) and (any-hover:hover) {
+	.touch-home{display:none;}
+}
+
 /* extra large screens */
 @media (min-width: 1200px) {
 	.navbar{padding-top:0.8%;}
@@ -123,7 +131,7 @@ and resize navbar accordingly */
 dropdown menu, change hover to active*/
 
 @media (any-hover: none) {
-	li.dropdown{display:none;}
+	.dropdown-home{display:none;}
 	.nav-link:active{color: #FFF9DD;}
 }
 
