@@ -34,6 +34,7 @@ This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework 
 ## Dev Notes
 
 - Bootstrap, google fonts, jquery, and baguetteBox.js are loaded through CDN
+- The bootsrap navbar dropdown is customized to toggle on hover instead of on click for all pages (except for index since it doesn't have a dropdown)
 
 ### Layout
 
@@ -42,6 +43,8 @@ This website uses [Bootstrap 4](https://getbootstrap.com/) as the CSS framework 
 - The rows on most of the pages have a min-height in order to visually center the contents and have them fit the whole page
 
 - The landing and home page have similar row layouts and positioning for the window and lamp to match up. The main difference is landing is set to justify-content-start instead of center for large/xl screens (this only changes the left/right positioning), and align-items-start on xs-medium screens (to avoid the mismatch of vertically centering the window across different devices)
+
+- The mobile/touchscreen version of the landing page is a combination of the index and home page.
 
 - The SVGs on most of the pages are positioned relatively using negative margins in order to place them where I want them to go while maintining their relationships to each other as the screen size changes (the only exception is contact page where the SVGs are organized in their regular order, left to right)
 
