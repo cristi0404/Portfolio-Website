@@ -26,7 +26,7 @@ body {
 }
 
 /*adjustment for wide viewports (ar > 1.896)*/
-@media (min-aspect-ratio:256/135) {
+@media (min-aspect-ratio:256/135) and (min-width:992px) {
 	.container{max-width:78vw;}
 }
 

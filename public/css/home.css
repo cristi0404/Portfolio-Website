@@ -6,10 +6,6 @@ body {
 	color: #29828A;
 }
 
-a.nav-link::after {
-	background: #29828A;
-}
-
 .current {
 	color: #29828A;
 }
@@ -49,6 +45,6 @@ a.nav-link::after {
 }
 
 /*adjustment for wide viewports (ar > 1.896)*/
-@media (min-aspect-ratio:256/135) {
+@media (min-aspect-ratio:256/135) and (min-width:992px) {
 	.container{max-width:73vw;}
 }
