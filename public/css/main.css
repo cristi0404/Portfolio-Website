@@ -14,7 +14,7 @@ dropdown menu links: #FAF8F2
 
 /*class for debugging*/
 .debug {
-	border: 2px solid black;
+	border: 2px solid white;
 }
 
 
@@ -165,7 +165,6 @@ to match right padding on menu*/
 
 #darkwindow {
 	position:relative;
-	width:37%;
 }
 
 #darklamp {
@@ -199,7 +198,16 @@ to match right padding on menu*/
 	visibility:hidden;
 }
 
-/*lightbeam styling is in lightbeam.css*/
+.mobile-home {
+	background: #f5e5cb;
+	margin-top:-1% !important;
+	padding-top:20%;
+}
+
+#mobilelamp {
+	position:relative;
+	z-index:1;
+}
 
 
 /* LANDING PAGE MEDIA QUERIES */
@@ -208,15 +216,33 @@ to match right padding on menu*/
 hide elements and resize other elements accordingly*/
 @media (max-width: 991.98px) {
 	#darklamp{display:none;}
-	#darkwindow{width:80%;margin-top:8%;margin-bottom:5%;}
 	#light{display:none;}
+	#darkwindow{width:80%;margin-bottom:5%;}
 }
 
-/*#window{position:relative;width:37%;right:80%;margin-bottom:10%;margin-right:-35%}
-#lamp{position:relative;width:16%;margin-left:-82%;margin-top:17%;margin-right:-12%;z-index:1;}*/
+@media (max-width: 575.98px) {
+	#darkwindow{margin-right:-100%;}
+	#mobilelamp{margin-top:45%;left:10%;width:100%;}
+}
+
+@media (min-width: 576px) {
+	#darkwindow{margin-right:-100%;}
+	#mobilelamp{margin-top:46%;left:10%;width:100%;}
+}
+
+@media (min-width: 576px) and (any-hover:none) {
+	#mobilelamp{margin-top:17%;}
+}
+
+@media (min-width: 768px) {
+	#darkwindow{margin-right:-100%;}
+	#mobilelamp{margin-top:47%;left:10%;width:100%;}
+}
 
 @media (min-width: 992px) and (any-hover: hover) {
-	#darkwindow{left:2%;margin-bottom:8%;margin-right:-35%;}
+	.mobile-home{display:none;}
+	#mobilelamp{display:none;}
+	#darkwindow{width:37%;left:2%;margin-bottom:8%;margin-right:-35%;}
 	#darklamp{margin-top:16%;margin-right:-30%;}
 	#light{margin-top:-4%;left:25%;margin-bottom:-3.5%;}
 }
@@ -228,7 +254,7 @@ hide elements and resize other elements accordingly*/
 }
 
 /*adjustments for wide viewports (ar > 1.896)*/
-@media (min-aspect-ratio: 256/135) {
+@media (min-aspect-ratio: 256/135) and (min-width:992px) {
 	#light{width:105.5%;}
 	#darkwindow{left:2%;margin-bottom:7%;margin-right:-35%;}
 	#darklamp{margin-top:17%;margin-right:-40%;}
@@ -241,7 +267,8 @@ hide unnecessary elements and resize accordingly (aka landscape tablets) */
 @media (any-hover: none) and (min-width: 992px) {
 	#darklamp{display:none;}
 	#light{display:none;}
-	#darkwindow{width:44%;margin-top:0%;margin-bottom:7%;margin-left:28%;}
+	#darkwindow{width:65%;margin-bottom:7%;margin-left:18%;margin-right:-100%;}
+	#mobilelamp{margin-top:26%;left:17%;width:100%;}
 }
 
 
