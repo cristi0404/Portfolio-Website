@@ -42,8 +42,6 @@ margin; normal-home link is hidden; body has gradient background*/
 	.container{min-width:100vw;}
 	.top{margin-top:4%;}
 	.normal-home{display:none;}
-	body{background: rgb(14,28,35);}
-	body{background: linear-gradient(180deg, rgba(14,28,35,1) 72%, rgba(245,229,203,1) 75%);}
 }
 
 @media (any-hover:none) {
@@ -52,8 +50,6 @@ margin; normal-home link is hidden; body has gradient background*/
 	.container{min-width:100vw;}
 	.top{margin-top:4%;}
 	.normal-home{display:none;}
-	body{background: rgb(14,28,35);}
-	body{background: linear-gradient(180deg, rgba(14,28,35,1) 72%, rgba(245,229,203,1) 75%);}
 }
 
 /*for xs to medium screens adjust home row size*/

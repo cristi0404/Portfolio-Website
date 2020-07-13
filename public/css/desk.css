@@ -34,3 +34,11 @@ body {
 @media (any-hover:none) and (min-width:992px) and (orientation:landscape) {
 	.row{min-height:75vh;}
 }
+
+/*container spacing for narrow screens*/
+@media (max-width: 991.98px) {
+	.container{margin-bottom:10%;}
+}
+
+
+
