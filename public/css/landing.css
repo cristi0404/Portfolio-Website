@@ -71,15 +71,15 @@ margin; normal-home link is hidden; body has gradient background*/
 /*for large and extra large screens that support hover, 
 change display of navbar*/
 @media (min-width: 992px) and (any-hover:hover) {
-	.navbar-brand{position:absolute;width:35vw;text-align:center;margin-left:auto;margin-right:auto;left:0;right:0;margin-top:3%;}
-	.navbar-nav{position:absolute;writing-mode:vertical-lr;right:2%;padding:0;margin-top:18%;z-index:2;}
+	.navbar-brand{position:absolute;width:35vw;text-align:center;margin-left:auto;margin-right:auto;left:0;right:0;margin-top:5%;}
+	.navbar-nav{position:absolute;writing-mode:vertical-lr;margin-top:70%;z-index:2;}
 	.nav-link{font-size:1.9vw;margin:0.7em 0em !important;color:#0E1C23;}
 	.container{margin-top:6.7%;}
 }
 
 @media (min-width: 1200px) and (any-hover:hover) {
-	.navbar-brand{margin-top:2.5%;}
-	.navbar-nav{margin-top:13%;}
+	.navbar-brand{margin-top:4%;}
+	.navbar-nav{margin-top:58%}
 	.container{margin-top:5.9%;}
 }
 
@@ -88,7 +88,7 @@ change display of navbar*/
 /*adjustment for wide viewports (ar > 1.896)*/
 @media (min-aspect-ratio:256/135) and (min-width:992px) {
 	.container{max-width:73vw;}
-	.navbar-nav{margin-top:10%;}
+	.navbar-nav{margin-top:50%;}
 }
 
 
@@ -103,17 +103,17 @@ change display of navbar*/
 
 	@media (min-width:922px) and (any-hover:hover) {
 		.navbar-nav {
-		     margin-top: 77%;
+		     margin-top: 75%;
 		  }
 	}
 
 	@media (min-width:1200px) and (any-hover:hover) {
 		.navbar-nav {
-		     margin-top: 65%;
+		     margin-top: 60%;
 		  }
 	}
 
 	@media (min-aspect-ratio:2/1) and (min-width:992px) {
-	.navbar-nav{margin-top:55%;}
+	.navbar-nav{margin-top:52%;}
 }
 }
