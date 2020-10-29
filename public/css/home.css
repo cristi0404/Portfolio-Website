@@ -37,6 +37,7 @@ body {
 /*row adjustment for desktop*/
 @media (min-width:992px) and (any-hover:hover) {
 	.row{min-height:85vh;}
+	#mobilelogo{display: none;}
 }
 
 /*layout and sizing adjustments for HD screens*/
@@ -47,4 +48,13 @@ body {
 /*adjustment for wide viewports (ar > 1.896)*/
 @media (min-aspect-ratio:256/135) and (min-width:992px) {
 	.container{max-width:73vw;}
+}
+
+/* navbar adjustment for mobile */
+@media (any-hover:none) {
+	.navbar{background-color: #0E1C23;}
+	.container{min-width: 100vw;}
+	#desktoplogo{display: none;}
+	.nav-link{color: #FFF9DD;}
+	.current{color: #5EA3A0;}
 }
