@@ -64,7 +64,7 @@ hr {
 	font-family: 'Montserrat', sans-serif;
 	color: #10232D;
 	font-weight: 500;
-	font-size: 112%;
+	font-size: 100%;
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -123,7 +123,7 @@ and resize navbar accordingly */
 @media (min-width: 1200px) {
 	.navbar{padding-top:0.8%;}
 	.navbar-brand{width:28vw;}
-	.nav-link{font-size:1.5vw;}
+	.nav-link{font-size:1.4vw;}
 	.dropdown-item{font-size:1.2vw;}
 }
 
