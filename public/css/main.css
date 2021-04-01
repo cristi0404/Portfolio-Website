@@ -382,6 +382,61 @@ adjust top image size and hr spacing*/
 
 
 /*--------------------------*/
+/* DESIGN PROJECT PAGES */
+
+.heading {
+	font-family:'Montserrat', sans-serif;
+	font-weight:600;
+	font-size:6vw;
+	text-align: center;
+	padding-top: 2vw;
+}
+
+.body {
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	font-size:4vw;
+	text-align: left;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+
+}
+
+.project-image {
+	width: 80%;
+	display: block;
+	padding-top: 2vw;
+
+}
+
+.project-image-caption {
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	font-size:1.1vw;
+	color: grey;
+	text-align: center;
+	padding-top: 1vw;
+}
+
+.project-links{color: #10232D;}
+.project-links:hover{color: #29828A;}
+
+.divider {
+	padding-top: 5vw;
+}
+
+
+/* DESIGN PROJECT PAGE MEDIA QUERIES */
+
+@media (min-width:992px) {
+	.heading{font-size:2.3vw;}
+	.body{font-size:1.4vw;}
+}
+
+
+
+
+/*--------------------------*/
 /* ABOUT PAGE */
 
 #pagetitle, #mobilepagetitle {
