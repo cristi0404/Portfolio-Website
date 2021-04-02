@@ -64,7 +64,7 @@ hr {
 	font-family: 'Montserrat', sans-serif;
 	color: #10232D;
 	font-weight: 500;
-	font-size: 112%;
+	font-size: 100%;
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -123,7 +123,7 @@ and resize navbar accordingly */
 @media (min-width: 1200px) {
 	.navbar{padding-top:0.8%;}
 	.navbar-brand{width:28vw;}
-	.nav-link{font-size:1.5vw;}
+	.nav-link{font-size:1.4vw;}
 	.dropdown-item{font-size:1.2vw;}
 }
 
@@ -379,6 +379,61 @@ adjust top image size and hr spacing*/
 }
 
 /*gallery styling is in gallery.css*/
+
+
+/*--------------------------*/
+/* DESIGN PROJECT PAGES */
+
+.heading {
+	font-family:'Montserrat', sans-serif;
+	font-weight:600;
+	font-size:6vw;
+	text-align: center;
+	padding-top: 2vw;
+}
+
+.body {
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	font-size:4vw;
+	text-align: left;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+
+}
+
+.project-image {
+	width: 80%;
+	display: block;
+	padding-top: 2vw;
+
+}
+
+.project-image-caption {
+	font-family:'Roboto', sans-serif;
+	font-weight:300;
+	font-size:1.1vw;
+	color: grey;
+	text-align: center;
+	padding-top: 1vw;
+}
+
+.project-links{color: #10232D;}
+.project-links:hover{color: #29828A;}
+
+.divider {
+	padding-top: 5vw;
+}
+
+
+/* DESIGN PROJECT PAGE MEDIA QUERIES */
+
+@media (min-width:992px) {
+	.heading{font-size:2.3vw;}
+	.body{font-size:1.4vw;}
+}
+
+
 
 
 /*--------------------------*/
